@@ -50,8 +50,14 @@ async function writePage(page, locale) {
 }
 
 function sitemap() {
-  const links = locales.map((locale) => `    <xhtml:link rel="alternate" hreflang="${locale}" href="${siteUrl + pages[0].routes[locale]}" />`).join("\n");
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${locales.map((locale) => `  <url>\n    <loc>${siteUrl + pages[0].routes[locale]}</loc>\n${links}\n    <xhtml:link rel="alternate" hreflang="x-default" href="${siteUrl + pages[0].routes.fr}" />\n  </url>`).join("\n")}</urlset>\n`;
+  const entries = [];
+  for (const page of pages) {
+    for (const locale of locales) {
+      const links = locales.map((alternativeLocale) => `    <xhtml:link rel="alternate" hreflang="${alternativeLocale}" href="${siteUrl + page.routes[alternativeLocale]}" />`).join("\n");
+      entries.push(`  <url>\n    <loc>${siteUrl + page.routes[locale]}</loc>\n${links}\n    <xhtml:link rel="alternate" hreflang="x-default" href="${siteUrl + page.routes.fr}" />\n  </url>`);
+    }
+  }
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${entries.join("\n")}\n</urlset>\n`;
 }
 
 await rm(outputDirectory, { recursive: true, force: true });
