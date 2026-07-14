@@ -151,7 +151,8 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.12; letter-spacing: -
 .hero-trust .ico { width: 16px; height: 16px; color: var(--primary); }
 
 /* Hero visual — vault card */
-.hero-visual { display: flex; justify-content: center; }
+.hero-copy { order: 2; }
+.hero-visual { display: flex; justify-content: center; order: 1; }
 .vault-card {
   width: 100%; max-width: 380px;
   background: linear-gradient(165deg, var(--surface-2), var(--bg-2));
@@ -374,7 +375,7 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.12; letter-spacing: -
 @media (max-width: 940px) {
   .hero-inner { grid-template-columns: 1fr; gap: 40px; }
   .hero-sub { max-width: none; }
-  .hero-visual { order: -1; }
+  .hero-copy, .hero-visual { order: initial; }
   .steps, .sec-grid, .price-grid { grid-template-columns: 1fr 1fr; }
   .compare-grid { grid-template-columns: 1fr; }
   .compare-divider { width: auto; height: 1px; }
