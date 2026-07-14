@@ -1,7 +1,7 @@
 import { cp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { translations } from "../js/translations.js";
+import { translations, localizedAssets } from "../js/translations.js";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const sourceDirectory = path.join(root, "src");
@@ -33,6 +33,8 @@ function translate(html, locale, routes) {
   for (const [source, target] of Object.entries(dictionary).sort(([a], [b]) => b.length - a.length)) {
     localized = localized.replaceAll(source, target);
   }
+  const assets = localizedAssets[locale] || localizedAssets.fr;
+  localized = localized.replaceAll("__HERO_MOCK__", assets.heroMock);
   localized = localized.replace("<!-- SEO_ALTERNATES -->", alternateLinks(routes, locale));
   localized = localized.replace(/(<a data-locale="(fr|en|es)"[^>]*)(>)/g, (match, attributes, linkLocale, end) => {
     return linkLocale === locale ? `${attributes} aria-current="page"${end}` : `${attributes}${end}`;
