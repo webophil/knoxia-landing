@@ -1,0 +1,207 @@
+/* KnoXia — internationalisation de la landing (sans dépendance) */
+(function () {
+  "use strict";
+
+  var STORAGE_KEY = "knoxia-locale";
+  var SUPPORTED = ["fr", "en", "es"];
+  var translations = {
+    en: {
+      "KnoXia — Coffre-fort documentaire chiffré pour mobiles": "KnoXia — Encrypted document vault for mobile",
+      "KnoXia protège vos documents avec un chiffrement local AES-256-GCM. 100% gratuit, sans serveur, sans traçage. Sauvegarde cloud Premium en architecture zero-knowledge.": "KnoXia protects your documents with local AES-256-GCM encryption. 100% free, serverless and tracking-free. Premium cloud backup with a zero-knowledge architecture.",
+      "KnoXia — accueil": "KnoXia — home",
+      "Logo KnoXia": "KnoXia logo",
+      "Navigation principale": "Main navigation",
+      "Fonctionnement": "How it works",
+      "Nos Offres": "Our plans",
+      "Sécurité": "Security",
+      "Installer KnoXia sur mon mobile": "Install KnoXia on my phone",
+      "Ouvrir le menu": "Open menu",
+      "Fermer le menu": "Close menu",
+      "Chiffrement local AES-256-GCM": "Local AES-256-GCM encryption",
+      "Vos documents mobiles dans": "Your mobile documents in",
+      "Chiffrés. Pour toujours.": "Encrypted. Forever.",
+      "Le coffre-fort mobile de vos documents. Une sécurité de niveau maximum directement dans votre poche : 100% gratuit, sans serveur, sans traçage. Vos fichiers ne quittent jamais votre mobile.": "Your mobile document vault. Maximum-level security right in your pocket: 100% free, serverless and tracking-free. Your files never leave your phone.",
+      "Installer gratuitement": "Install for free",
+      "En savoir plus": "Learn more",
+      "Aucun compte requis": "No account required",
+      "Aucune publicité": "No ads",
+      "100% hors ligne": "100% offline",
+      "Application KnoXia": "KnoXia app",
+      "Coffre verrouillé": "Vault locked",
+      "Mes documents": "My documents",
+      "Dossier_médical.pdf": "Medical_record.pdf",
+      "Aperçu du document image stocké dans KnoXia": "Preview of the image document stored in KnoXia",
+      "Carte Identité Recto": "ID card front",
+      "RIB Compte PRO.pdf": "Business_bank_details.pdf",
+      "Passeport.jpg": "Passport.jpg",
+      "Trois gestes pour une confidentialité totale": "Three steps to complete privacy",
+      "Aucune configuration complexe. Le chiffrement se fait sur votre appareil, avant que quoi que ce soit ne soit stocké.": "No complex setup. Encryption happens on your device before anything is stored.",
+      "Chiffrer localement": "Encrypt locally",
+      "Chaque document est chiffré en AES-256-GCM directement sur votre téléphone. La clé est dérivée de votre phrase secrète via PBKDF2.": "Every document is encrypted with AES-256-GCM directly on your phone. The key is derived from your secret phrase using PBKDF2.",
+      "Stocker en sécurité": "Store securely",
+      "Vos fichiers restent dans un coffre local dont vous seul possédez la combinaison. Sans votre code PIN secret, les données sont illisibles, y compris en cas de vol de l'appareil.": "Your files remain in a local vault whose combination only you know. Without your secret PIN, the data is unreadable, even if the device is stolen.",
+      "Accéder partout": "Access anywhere",
+      "Consultez vos documents partout, même hors-ligne. Avec l'offre Premium, synchronisez-les de façon chiffrée entre tous vos appareils.": "View your documents anywhere, even offline. With Premium, synchronise them securely across all your devices.",
+      "Gratuit ou Premium": "Free or Premium",
+      "Une protection identique, une seule exigence... Ajoutez la sérénité !": "The same protection, one extra benefit… add peace of mind!",
+      "L'offre gratuite est complète et entièrement locale. Premium ajoute la sauvegarde cloud chiffrée et la synchronisation.": "The free plan is complete and entirely local. Premium adds encrypted cloud backup and synchronisation.",
+      "Gratuit": "Free",
+      "pour toujours": "forever",
+      "Chiffrement local, sans compte, sans serveur. Idéal pour vos documents personnels, confidentiels et données financières.": "Local encryption, no account, no server. Ideal for your personal, confidential and financial documents.",
+      "Dérivation de clé PBKDF2": "PBKDF2 key derivation",
+      "Aucune limite de fichiers": "No file limit",
+      "Sans publicité, sans traçage": "No ads, no tracking",
+      "Commencer gratuitement": "Get started for free",
+      "dès 4,99 €": "from €4.99",
+      "selon la durée": "depending on duration",
+      "Tout le Gratuit, plus la sauvegarde cloud chiffrée de bout en bout et la synchronisation sécurisée entre appareils.": "Everything in Free, plus end-to-end encrypted cloud backup and secure cross-device synchronisation.",
+      "Tout ce qui est inclus dans Gratuit": "Everything included in Free",
+      "Sauvegarde cloud niveau militaire": "Military-grade cloud backup",
+      "Protocole TLS 1.3": "TLS 1.3 protocol",
+      "Architecture zero-knowledge": "Zero-knowledge architecture",
+      "Synchronisation multi-appareils": "Multi-device synchronisation",
+      "Voir les tarifs Premium": "View Premium pricing",
+      "Tarifs Premium": "Premium pricing",
+      "Un abonnement clair, sans reconduction cachée": "Straightforward subscriptions, no hidden renewal",
+      "Choisissez la durée qui vous convient. Plus l'engagement est long, plus le coût mensuel baisse.": "Choose the duration that suits you. The longer the commitment, the lower the monthly cost.",
+      "3 mois": "3 months",
+      "soit 1,66 € / mois": "just €1.66 / month",
+      "Sauvegarde cloud chiffrée": "Encrypted cloud backup",
+      "Zero-knowledge · TL 1.3": "Zero-knowledge · TLS 1.3",
+      "Choisir 3 mois": "Choose 3 months",
+      "6 mois": "6 months",
+      "soit 1,33 € / mois": "just €1.33 / month",
+      "Zero-knowledge · TLS 1.3": "Zero-knowledge · TLS 1.3",
+      "Choisir 6 mois": "Choose 6 months",
+      "Meilleure valeur": "Best value",
+      "12 mois": "12 months",
+      "soit 1,00 € / mois — économisez 40%": "just €1.00 / month — save 40%",
+      "Priorité sur les nouvelles fonctions": "Early access to new features",
+      "Démarrer Premium": "Start Premium",
+      "Sécurité technique": "Technical security",
+      "La cryptographie, expliquée simplement": "Cryptography, explained simply",
+      "Nous utilisons des standards éprouvés, employés par les organisations et entreprises les plus exigentes en matière de confidentialité et sécurité.": "We use proven standards relied on by organisations and companies with the most demanding privacy and security requirements.",
+      "Voici ce qui protège concrètement vos fichiers :": "Here is what specifically protects your files:",
+      "Le chiffrement symétrique de référence. La variante GCM garantit à la fois la confidentialité et l'intégrité : impossible de modifier un fichier chiffré sans être détecté.": "The benchmark symmetric encryption. The GCM variant guarantees both confidentiality and integrity: an encrypted file cannot be altered without detection.",
+      "Votre phrase secrète est transformée en clé de chiffrement par des milliers d'itérations (600 000). Une attaque par force brute devient extrêmement coûteuse.": "Your secret phrase is turned into an encryption key through hundreds of thousands of iterations (600,000). A brute-force attack becomes extremely costly.",
+      "TL 1.3": "TLS 1.3",
+      "Pour la sauvegarde cloud Premium, chaque transfert emprunte le protocole de transport le plus récent et le plus rapide, résistant aux interceptions.": "For Premium cloud backup, every transfer uses the newest and fastest transport protocol, designed to resist interception.",
+      "Les clés ne quittent jamais votre appareil. Même nos serveurs ne stockent que des données chiffrées : nous ne pouvons pas lire vos documents.": "Keys never leave your device. Even our servers only store encrypted data: we cannot read your documents.",
+      "Chiffrement de bout en bout": "End-to-end encryption",
+      "Le contenu est chiffré à la source et déchiffré uniquement sur vos appareils autorisés. Personne, au milieu, ne peut y accéder.": "Content is encrypted at the source and decrypted only on your authorised devices. Nobody in between can access it.",
+      "Sécurité vérifiable": "Verifiable security",
+      "Des standards ouverts et documentés, sans mécanisme propriétaire opaque. La confiance se construit sur la transparence, pas sur des promesses.": "Open, documented standards, with no opaque proprietary mechanism. Trust is built on transparency, not promises.",
+      "Questions fréquentes": "Frequently asked questions",
+      "Ce que vous vous demandez sûrement": "What you are probably wondering",
+      "L'application est-elle vraiment gratuite ?": "Is the app really free?",
+      "Oui, à 100%. Le chiffrement local ne nécessite ni serveur, ni compte. Aucune publicité, aucune limite de fichiers.": "Yes, 100%. Local encryption requires neither a server nor an account. No ads, no file limit.",
+      "Que se passe-t-il si je perds mon téléphone ?": "What happens if I lose my phone?",
+      "Sans Premium, vos données restent uniquement sur l'appareil : elles disparaissent avec lui, mais restent illisibles pour un tiers. Avec Premium, une sauvegarde chiffrée vous permet de tout restaurer.": "Without Premium, your data stays only on the device: it disappears with it, but remains unreadable to anyone else. With Premium, encrypted backup lets you restore everything.",
+      "KnoXia peut-il lire mes documents ?": "Can KnoXia read my documents?",
+      "Non. L'architecture zero-knowledge signifie que même KnoXia ne peut pas accéder à vos données chiffrées. Les clés restent chez vous.": "No. A zero-knowledge architecture means that even KnoXia cannot access your encrypted data. The keys stay with you.",
+      "Quel est le niveau de sécurité de l'AES-256-GCM ?": "How secure is AES-256-GCM?",
+      "L'AES-256-GCM est un chiffrement de niveau supérieur, utilisé par des organisations officielles et des sociétés financières pour protéger leurs données sensibles.": "AES-256-GCM is high-grade encryption used by official organisations and financial companies to protect sensitive data.",
+      "Quelle est la différence entre Premium et Gratuit ?": "What is the difference between Premium and Free?",
+      "Le Gratuit est entièrement local et sans frais. Le Premium ajoute une sauvegarde cloud sécurisée et la synchronisation entre plusieurs appareils.": "Free is entirely local and free of charge. Premium adds secure cloud backup and synchronisation across several devices.",
+      "Reprenez le contrôle de vos données": "Take back control of your data",
+      "Commencez à protéger vos documents dès aujourd'hui. Gratuit pour toujours, options Premium disponibles.": "Start protecting your documents today. Free forever, with Premium options available.",
+      "L'App KnoXia est disponible uniquement sous forme de Progressive Web Application, à installer sur l'écran d'accueil de votre mobile, avec exactement le même fonctionnement qu'une application mobile native, sans les inconvénients. Vous retrouverez KnoXia dans la liste de vos applications déjà installées, et vous pourrez la gérer exactement de la même manière. Vous accédez à KnoXia en cliquant l'îcone installée sur votre écran.": "The KnoXia app is available only as a Progressive Web App. Install it on your phone’s home screen and it works just like a native mobile app, without the drawbacks. You will find KnoXia in your list of installed apps and manage it in exactly the same way. Open KnoXia by tapping its icon on your screen.",
+      "En choisissant le format PWA, KnoXia vous assure une totale indépendance vis-à-vis des Stores classiques, une mise à jour en temps réel de l'app et un fonctionnement 100 % hors-ligne disponible.": "By choosing the PWA format, KnoXia gives you complete independence from traditional app stores, real-time app updates and fully offline operation.",
+      "Scannez le code avec votre mobile pour ouvrir l'app :": "Scan the code with your phone to open the app:",
+      "Ouvrir l'application KnoXia sur app.knoxia.eu": "Open the KnoXia app on app.knoxia.eu",
+      "QR code vers l'application KnoXia (https://app.knoxia.eu)": "QR code for the KnoXia app (https://app.knoxia.eu)",
+      "Coffre-fort documentaire chiffré. Vos fichiers, votre appareil, vos clés.": "Encrypted document vault. Your files, your device, your keys.",
+      "Liens du pied de page": "Footer links",
+      "Politique de confidentialité": "Privacy policy",
+      "Conditions d'utilisation": "Terms of use",
+      "Livre blanc sécurité": "Security white paper",
+      "Tous droits réservés.": "All rights reserved."
+    },
+    es: {
+      "KnoXia — Coffre-fort documentaire chiffré pour mobiles": "KnoXia — Bóveda documental cifrada para móviles",
+      "KnoXia protège vos documents avec un chiffrement local AES-256-GCM. 100% gratuit, sans serveur, sans traçage. Sauvegarde cloud Premium en architecture zero-knowledge.": "KnoXia protege tus documentos con cifrado local AES-256-GCM. 100% gratuito, sin servidores ni rastreo. Copia de seguridad Premium en la nube con arquitectura de conocimiento cero.",
+      "KnoXia — accueil": "KnoXia — inicio", "Logo KnoXia": "Logotipo de KnoXia", "Navigation principale": "Navegación principal",
+      "Fonctionnement": "Cómo funciona", "Nos Offres": "Nuestros planes", "Sécurité": "Seguridad", "Installer KnoXia sur mon mobile": "Instalar KnoXia en mi móvil", "Ouvrir le menu": "Abrir menú", "Fermer le menu": "Cerrar menú",
+      "Chiffrement local AES-256-GCM": "Cifrado local AES-256-GCM", "Vos documents mobiles dans": "Tus documentos móviles en", "Chiffrés. Pour toujours.": "Cifrados. Para siempre.",
+      "Le coffre-fort mobile de vos documents. Une sécurité de niveau maximum directement dans votre poche : 100% gratuit, sans serveur, sans traçage. Vos fichiers ne quittent jamais votre mobile.": "La bóveda móvil de tus documentos. Seguridad de máximo nivel directamente en tu bolsillo: 100% gratuita, sin servidores ni rastreo. Tus archivos nunca salen de tu móvil.",
+      "Installer gratuitement": "Instalar gratis", "En savoir plus": "Saber más", "Aucun compte requis": "No se necesita cuenta", "Aucune publicité": "Sin publicidad", "100% hors ligne": "100% sin conexión",
+      "Application KnoXia": "Aplicación KnoXia", "Coffre verrouillé": "Bóveda bloqueada", "Mes documents": "Mis documentos", "Dossier_médical.pdf": "Historial_médico.pdf", "Aperçu du document image stocké dans KnoXia": "Vista previa del documento de imagen guardado en KnoXia", "Carte Identité Recto": "Documento de identidad anverso", "RIB Compte PRO.pdf": "Datos_bancarios_empresa.pdf", "Passeport.jpg": "Pasaporte.jpg",
+      "Trois gestes pour une confidentialité totale": "Tres pasos para una privacidad total", "Aucune configuration complexe. Le chiffrement se fait sur votre appareil, avant que quoi que ce soit ne soit stocké.": "Sin configuraciones complejas. El cifrado se realiza en tu dispositivo antes de almacenar nada.",
+      "Chiffrer localement": "Cifrar localmente", "Chaque document est chiffré en AES-256-GCM directement sur votre téléphone. La clé est dérivée de votre phrase secrète via PBKDF2.": "Cada documento se cifra con AES-256-GCM directamente en tu teléfono. La clave se deriva de tu frase secreta mediante PBKDF2.",
+      "Stocker en sécurité": "Guardar con seguridad", "Vos fichiers restent dans un coffre local dont vous seul possédez la combinaison. Sans votre code PIN secret, les données sont illisibles, y compris en cas de vol de l'appareil.": "Tus archivos permanecen en una bóveda local cuya combinación solo tú conoces. Sin tu PIN secreto, los datos son ilegibles, incluso si te roban el dispositivo.",
+      "Accéder partout": "Acceder desde cualquier lugar", "Consultez vos documents partout, même hors-ligne. Avec l'offre Premium, synchronisez-les de façon chiffrée entre tous vos appareils.": "Consulta tus documentos desde cualquier lugar, incluso sin conexión. Con Premium, sincronízalos de forma cifrada entre todos tus dispositivos.",
+      "Gratuit ou Premium": "Gratis o Premium", "Une protection identique, une seule exigence... Ajoutez la sérénité !": "La misma protección, un beneficio más… ¡añade tranquilidad!", "L'offre gratuite est complète et entièrement locale. Premium ajoute la sauvegarde cloud chiffrée et la synchronisation.": "El plan gratuito es completo y totalmente local. Premium añade copia de seguridad cifrada en la nube y sincronización.",
+      "Gratuit": "Gratis", "pour toujours": "para siempre", "Chiffrement local, sans compte, sans serveur. Idéal pour vos documents personnels, confidentiels et données financières.": "Cifrado local, sin cuenta ni servidor. Ideal para tus documentos personales, confidenciales y financieros.", "Dérivation de clé PBKDF2": "Derivación de claves PBKDF2", "Aucune limite de fichiers": "Sin límite de archivos", "Sans publicité, sans traçage": "Sin publicidad ni rastreo", "Commencer gratuitement": "Empezar gratis",
+      "dès 4,99 €": "desde 4,99 €", "selon la durée": "según la duración", "Tout le Gratuit, plus la sauvegarde cloud chiffrée de bout en bout et la synchronisation sécurisée entre appareils.": "Todo lo incluido en Gratis, además de copia de seguridad cifrada de extremo a extremo y sincronización segura entre dispositivos.", "Tout ce qui est inclus dans Gratuit": "Todo lo incluido en Gratis", "Sauvegarde cloud niveau militaire": "Copia de seguridad en la nube de nivel militar", "Protocole TLS 1.3": "Protocolo TLS 1.3", "Architecture zero-knowledge": "Arquitectura de conocimiento cero", "Synchronisation multi-appareils": "Sincronización multidispositivo", "Voir les tarifs Premium": "Ver precios Premium",
+      "Tarifs Premium": "Precios Premium", "Un abonnement clair, sans reconduction cachée": "Una suscripción clara, sin renovación oculta", "Choisissez la durée qui vous convient. Plus l'engagement est long, plus le coût mensuel baisse.": "Elige la duración que prefieras. Cuanto más largo sea el compromiso, menor será el coste mensual.", "3 mois": "3 meses", "soit 1,66 € / mois": "solo 1,66 € / mes", "Sauvegarde cloud chiffrée": "Copia de seguridad cifrada en la nube", "Zero-knowledge · TL 1.3": "Conocimiento cero · TLS 1.3", "Choisir 3 mois": "Elegir 3 meses", "6 mois": "6 meses", "soit 1,33 € / mois": "solo 1,33 € / mes", "Zero-knowledge · TLS 1.3": "Conocimiento cero · TLS 1.3", "Choisir 6 mois": "Elegir 6 meses", "Meilleure valeur": "Mejor opción", "12 mois": "12 meses", "soit 1,00 € / mois — économisez 40%": "solo 1,00 € / mes — ahorra un 40%", "Priorité sur les nouvelles fonctions": "Acceso prioritario a nuevas funciones", "Démarrer Premium": "Empezar Premium",
+      "Sécurité technique": "Seguridad técnica", "La cryptographie, expliquée simplement": "Criptografía explicada de forma sencilla", "Nous utilisons des standards éprouvés, employés par les organisations et entreprises les plus exigentes en matière de confidentialité et sécurité.": "Usamos estándares probados, utilizados por las organizaciones y empresas más exigentes en privacidad y seguridad.", "Voici ce qui protège concrètement vos fichiers :": "Esto es lo que protege concretamente tus archivos:",
+      "Le chiffrement symétrique de référence. La variante GCM garantit à la fois la confidentialité et l'intégrité : impossible de modifier un fichier chiffré sans être détecté.": "El cifrado simétrico de referencia. La variante GCM garantiza confidencialidad e integridad: es imposible modificar un archivo cifrado sin ser detectado.", "Votre phrase secrète est transformée en clé de chiffrement par des milliers d'itérations (600 000). Une attaque par force brute devient extrêmement coûteuse.": "Tu frase secreta se convierte en una clave de cifrado mediante cientos de miles de iteraciones (600 000). Un ataque de fuerza bruta se vuelve extremadamente costoso.", "TL 1.3": "TLS 1.3", "Pour la sauvegarde cloud Premium, chaque transfert emprunte le protocole de transport le plus récent et le plus rapide, résistant aux interceptions.": "Para la copia de seguridad Premium en la nube, cada transferencia utiliza el protocolo de transporte más reciente y rápido, resistente a las interceptaciones.", "Les clés ne quittent jamais votre appareil. Même nos serveurs ne stockent que des données chiffrées : nous ne pouvons pas lire vos documents.": "Las claves nunca salen de tu dispositivo. Incluso nuestros servidores solo almacenan datos cifrados: no podemos leer tus documentos.", "Chiffrement de bout en bout": "Cifrado de extremo a extremo", "Le contenu est chiffré à la source et déchiffré uniquement sur vos appareils autorisés. Personne, au milieu, ne peut y accéder.": "El contenido se cifra en origen y solo se descifra en tus dispositivos autorizados. Nadie en medio puede acceder a él.", "Sécurité vérifiable": "Seguridad verificable", "Des standards ouverts et documentés, sans mécanisme propriétaire opaque. La confiance se construit sur la transparence, pas sur des promesses.": "Estándares abiertos y documentados, sin mecanismos propietarios opacos. La confianza se construye con transparencia, no con promesas.",
+      "Questions fréquentes": "Preguntas frecuentes", "Ce que vous vous demandez sûrement": "Lo que seguramente te estás preguntando", "L'application est-elle vraiment gratuite ?": "¿La aplicación es realmente gratuita?", "Oui, à 100%. Le chiffrement local ne nécessite ni serveur, ni compte. Aucune publicité, aucune limite de fichiers.": "Sí, al 100%. El cifrado local no requiere servidor ni cuenta. Sin publicidad ni límite de archivos.", "Que se passe-t-il si je perds mon téléphone ?": "¿Qué ocurre si pierdo mi teléfono?", "Sans Premium, vos données restent uniquement sur l'appareil : elles disparaissent avec lui, mais restent illisibles pour un tiers. Avec Premium, une sauvegarde chiffrée vous permet de tout restaurer.": "Sin Premium, tus datos permanecen únicamente en el dispositivo: desaparecen con él, pero siguen siendo ilegibles para terceros. Con Premium, una copia de seguridad cifrada te permite restaurarlo todo.", "KnoXia peut-il lire mes documents ?": "¿Puede KnoXia leer mis documentos?", "Non. L'architecture zero-knowledge signifie que même KnoXia ne peut pas accéder à vos données chiffrées. Les clés restent chez vous.": "No. Una arquitectura de conocimiento cero significa que ni siquiera KnoXia puede acceder a tus datos cifrados. Las claves permanecen contigo.", "Quel est le niveau de sécurité de l'AES-256-GCM ?": "¿Qué nivel de seguridad ofrece AES-256-GCM?", "L'AES-256-GCM est un chiffrement de niveau supérieur, utilisé par des organisations officielles et des sociétés financières pour protéger leurs données sensibles.": "AES-256-GCM es un cifrado de alto nivel utilizado por organizaciones oficiales y entidades financieras para proteger datos sensibles.", "Quelle est la différence entre Premium et Gratuit ?": "¿Cuál es la diferencia entre Premium y Gratis?", "Le Gratuit est entièrement local et sans frais. Le Premium ajoute une sauvegarde cloud sécurisée et la synchronisation entre plusieurs appareils.": "Gratis es totalmente local y no tiene coste. Premium añade copia de seguridad segura en la nube y sincronización entre varios dispositivos.",
+      "Reprenez le contrôle de vos données": "Recupera el control de tus datos", "Commencez à protéger vos documents dès aujourd'hui. Gratuit pour toujours, options Premium disponibles.": "Empieza a proteger tus documentos hoy mismo. Gratis para siempre, con opciones Premium disponibles.", "L'App KnoXia est disponible uniquement sous forme de Progressive Web Application, à installer sur l'écran d'accueil de votre mobile, avec exactement le même fonctionnement qu'une application mobile native, sans les inconvénients. Vous retrouverez KnoXia dans la liste de vos applications déjà installées, et vous pourrez la gérer exactement de la même manière. Vous accédez à KnoXia en cliquant l'îcone installée sur votre écran.": "La aplicación KnoXia solo está disponible como Progressive Web App. Instálala en la pantalla de inicio de tu móvil y funcionará exactamente como una aplicación nativa, sin sus inconvenientes. Encontrarás KnoXia en la lista de aplicaciones instaladas y podrás gestionarla del mismo modo. Accede a KnoXia pulsando su icono en la pantalla.", "En choisissant le format PWA, KnoXia vous assure une totale indépendance vis-à-vis des Stores classiques, une mise à jour en temps réel de l'app et un fonctionnement 100 % hors-ligne disponible.": "Al elegir el formato PWA, KnoXia te ofrece independencia total de las tiendas de aplicaciones tradicionales, actualizaciones en tiempo real y funcionamiento 100 % sin conexión.", "Scannez le code avec votre mobile pour ouvrir l'app :": "Escanea el código con tu móvil para abrir la aplicación:", "Ouvrir l'application KnoXia sur app.knoxia.eu": "Abrir la aplicación KnoXia en app.knoxia.eu", "QR code vers l'application KnoXia (https://app.knoxia.eu)": "Código QR para la aplicación KnoXia (https://app.knoxia.eu)", "Coffre-fort documentaire chiffré. Vos fichiers, votre appareil, vos clés.": "Bóveda documental cifrada. Tus archivos, tu dispositivo, tus claves.", "Liens du pied de page": "Enlaces del pie de página", "Politique de confidentialité": "Política de privacidad", "Conditions d'utilisation": "Condiciones de uso", "Livre blanc sécurité": "Libro blanco de seguridad", "Tous droits réservés.": "Todos los derechos reservados."
+    }
+  };
+
+  function preferredLocale() {
+    try {
+      var saved = localStorage.getItem(STORAGE_KEY);
+      if (SUPPORTED.indexOf(saved) !== -1) return saved;
+    } catch (ignore) {}
+    var browserLocales = navigator.languages || [navigator.language || "fr"];
+    for (var i = 0; i < browserLocales.length; i += 1) {
+      var locale = browserLocales[i].toLowerCase().split("-")[0];
+      if (SUPPORTED.indexOf(locale) !== -1) return locale;
+    }
+    return "fr";
+  }
+
+  function replaceText(text, dictionary) {
+    var key = text.trim();
+    if (!key || !dictionary[key]) return text;
+    return text.replace(key, dictionary[key]);
+  }
+
+  function applyLocale(locale) {
+    var dictionary = translations[locale] || {};
+    document.documentElement.lang = locale;
+    document.documentElement.dir = "ltr";
+    document.title = dictionary[document.title] || document.title;
+
+    var metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) metaDescription.content = dictionary[metaDescription.content] || metaDescription.content;
+
+    var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+      acceptNode: function (node) {
+        var parent = node.parentElement;
+        return parent && !/^(SCRIPT|STYLE|CODE)$/i.test(parent.tagName) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+      }
+    });
+    var node;
+    while ((node = walker.nextNode())) node.nodeValue = replaceText(node.nodeValue, dictionary);
+
+    document.querySelectorAll("[alt], [aria-label]").forEach(function (element) {
+      ["alt", "aria-label"].forEach(function (attribute) {
+        var value = element.getAttribute(attribute);
+        if (value && dictionary[value]) element.setAttribute(attribute, dictionary[value]);
+      });
+    });
+
+    document.querySelectorAll("[data-locale]").forEach(function (button) {
+      var active = button.getAttribute("data-locale") === locale;
+      button.setAttribute("aria-pressed", String(active));
+    });
+  }
+
+  function initialise() {
+    var locale = preferredLocale();
+    applyLocale(locale);
+    document.querySelectorAll("[data-locale]").forEach(function (button) {
+      button.addEventListener("click", function () {
+        locale = button.getAttribute("data-locale");
+        try { localStorage.setItem(STORAGE_KEY, locale); } catch (ignore) {}
+        window.location.reload();
+      });
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", initialise);
+})();
