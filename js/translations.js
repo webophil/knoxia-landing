@@ -197,3 +197,11 @@ Object.assign(translations.es, {
   "Synchronisation sécurisée — bientôt": "Sincronización segura — próximamente",
   "Être informé du lancement": "Recibir novedades del lanzamiento"
 });
+
+Object.assign(translations.en, {
+  "Par <a href=\"https://phildev.fr\" target=\"_blank\" rel=\"noopener noreferrer\">PhilDEV.fr</a> Agence Web Reims France": "By <a href=\"https://phildev.fr\" target=\"_blank\" rel=\"noopener noreferrer\">PhilDEV.fr</a>, web agency in Reims, France"
+});
+
+Object.assign(translations.es, {
+  "Par <a href=\"https://phildev.fr\" target=\"_blank\" rel=\"noopener noreferrer\">PhilDEV.fr</a> Agence Web Reims France": "Por <a href=\"https://phildev.fr\" target=\"_blank\" rel=\"noopener noreferrer\">PhilDEV.fr</a>, agencia web en Reims, Francia"
+});
