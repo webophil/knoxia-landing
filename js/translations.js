@@ -142,3 +142,58 @@ export const localizedAssets = {
   en: { heroMock: "/assets/mock-knoxia.png" },
   es: { heroMock: "/assets/mock-knoxia.png" }
 };
+
+Object.assign(translations.en, {
+  "Utilisation": "How to use it",
+  "Votre coffre-fort personnel, toujours dans votre poche": "Your personal safe, always in your pocket",
+  "Conservez vos documents, photos et informations importantes, officielles ou confidentielles dans un espace protégé sur votre mobile.": "Keep your important, official or confidential documents, photos and information in a protected space on your mobile.",
+  "Créez votre coffre": "Create your vault",
+  "Choisissez votre code PIN secret : il protège l’accès à votre coffre et participe au chiffrement de vos documents. Vous pouvez aussi utiliser l’empreinte digitale ou la reconnaissance faciale de votre mobile.": "Choose your secret PIN: it protects access to your vault and contributes to encrypting your documents. You can also use your mobile’s fingerprint or face recognition.",
+  "Ajoutez et protégez vos documents": "Add and protect your documents",
+  "Numérisez-les avec l’appareil photo ou importez-les depuis vos photos et documents. KnoXia conserve la copie chiffrée dans votre coffre ; pensez à supprimer définitivement l’original si nécessaire.": "Scan them with your camera or import them from your photos and documents. KnoXia keeps the encrypted copy in your vault; remember to permanently delete the original if needed.",
+  "Organisez-les simplement": "Organise them with ease",
+  "Créez vos catégories, classez vos documents et associez-en plusieurs à un même fichier pour retrouver l’essentiel en un instant.": "Create your own categories, organise your documents and assign several categories to one file to find what matters in an instant.",
+  "Gardez aussi vos secrets": "Keep your secrets safe too",
+  "La catégorie fixe « Secrets » protège vos informations sensibles au format texte : code PIN, code d’accès, combinaison de coffre ou d’alarme.": "The dedicated “Secrets” category protects sensitive text information: PINs, access codes, safe combinations or alarm codes.",
+  "Partagez lorsque vous le décidez": "Share when you decide",
+  "Envoyez ponctuellement un document déchiffré par e-mail ou SMS. Après le partage, sa copie reste chiffrée dans votre coffre : choisissez vos destinataires avec soin.": "Send a decrypted document by email or SMS when needed. After sharing, its copy remains encrypted in your vault: choose your recipients carefully.",
+  "Premium · bientôt": "Premium · coming soon",
+  "Tout le Gratuit, avec la sauvegarde Cloud chiffrée, la synchronisation sécurisée et l’horodatage électronique qualifié — prochainement.": "Everything in Free, plus encrypted Cloud backup, secure synchronisation and qualified electronic time-stamping — coming soon.",
+  "Sauvegarde Cloud chiffrée — bientôt": "Encrypted Cloud backup — coming soon",
+  "Synchronisation multi-appareils — bientôt": "Multi-device synchronisation — coming soon",
+  "Horodatage électronique qualifié — bientôt": "Qualified electronic time-stamping — coming soon",
+  "Empreinte d’intégrité KnoXia — bientôt": "KnoXia integrity fingerprint — coming soon",
+  "Découvrir Premium": "Discover Premium",
+  "Des fonctions Premium pensées pour aller plus loin": "Premium features designed to go further",
+  "La sauvegarde Cloud chiffrée et l’horodatage électronique qualifié seront proposés prochainement.": "Encrypted Cloud backup and qualified electronic time-stamping will be available soon.",
+  "Sauvegarde Cloud chiffrée — bientôt": "Encrypted Cloud backup — coming soon",
+  "Synchronisation sécurisée — bientôt": "Secure synchronisation — coming soon",
+  "Être informé du lancement": "Get launch updates"
+});
+
+Object.assign(translations.es, {
+  "Utilisation": "Uso",
+  "Votre coffre-fort personnel, toujours dans votre poche": "Tu caja fuerte personal, siempre en tu bolsillo",
+  "Conservez vos documents, photos et informations importantes, officielles ou confidentielles dans un espace protégé sur votre mobile.": "Guarda tus documentos, fotos e información importante, oficial o confidencial en un espacio protegido de tu móvil.",
+  "Créez votre coffre": "Crea tu caja fuerte",
+  "Choisissez votre code PIN secret : il protège l’accès à votre coffre et participe au chiffrement de vos documents. Vous pouvez aussi utiliser l’empreinte digitale ou la reconnaissance faciale de votre mobile.": "Elige tu PIN secreto: protege el acceso a tu caja fuerte y contribuye al cifrado de tus documentos. También puedes usar la huella dactilar o el reconocimiento facial de tu móvil.",
+  "Ajoutez et protégez vos documents": "Añade y protege tus documentos",
+  "Numérisez-les avec l’appareil photo ou importez-les depuis vos photos et documents. KnoXia conserve la copie chiffrée dans votre coffre ; pensez à supprimer définitivement l’original si nécessaire.": "Escanéalos con la cámara o impórtalos desde tus fotos y documentos. KnoXia conserva la copia cifrada en tu caja fuerte; recuerda eliminar definitivamente el original si es necesario.",
+  "Organisez-les simplement": "Organízalos fácilmente",
+  "Créez vos catégories, classez vos documents et associez-en plusieurs à un même fichier pour retrouver l’essentiel en un instant.": "Crea tus categorías, organiza tus documentos y asigna varias a un mismo archivo para encontrar lo esencial al instante.",
+  "Gardez aussi vos secrets": "Guarda también tus secretos",
+  "La catégorie fixe « Secrets » protège vos informations sensibles au format texte : code PIN, code d’accès, combinaison de coffre ou d’alarme.": "La categoría fija «Secretos» protege tu información sensible en formato texto: PIN, códigos de acceso, combinaciones de caja fuerte o de alarma.",
+  "Partagez lorsque vous le décidez": "Comparte cuando tú decidas",
+  "Envoyez ponctuellement un document déchiffré par e-mail ou SMS. Après le partage, sa copie reste chiffrée dans votre coffre : choisissez vos destinataires avec soin.": "Envía puntualmente un documento descifrado por correo electrónico o SMS. Tras compartirlo, su copia permanece cifrada en tu caja fuerte: elige a los destinatarios con cuidado.",
+  "Premium · bientôt": "Premium · próximamente",
+  "Tout le Gratuit, avec la sauvegarde Cloud chiffrée, la synchronisation sécurisée et l’horodatage électronique qualifié — prochainement.": "Todo lo incluido en Gratis, con copia de seguridad Cloud cifrada, sincronización segura y sellado de tiempo electrónico cualificado — próximamente.",
+  "Sauvegarde Cloud chiffrée — bientôt": "Copia de seguridad Cloud cifrada — próximamente",
+  "Synchronisation multi-appareils — bientôt": "Sincronización multidispositivo — próximamente",
+  "Horodatage électronique qualifié — bientôt": "Sellado de tiempo electrónico cualificado — próximamente",
+  "Empreinte d’intégrité KnoXia — bientôt": "Huella de integridad KnoXia — próximamente",
+  "Découvrir Premium": "Descubrir Premium",
+  "Des fonctions Premium pensées pour aller plus loin": "Funciones Premium para ir más allá",
+  "La sauvegarde Cloud chiffrée et l’horodatage électronique qualifié seront proposés prochainement.": "La copia de seguridad Cloud cifrada y el sellado de tiempo electrónico cualificado estarán disponibles próximamente.",
+  "Synchronisation sécurisée — bientôt": "Sincronización segura — próximamente",
+  "Être informé du lancement": "Recibir novedades del lanzamiento"
+});

@@ -212,6 +212,20 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.12; letter-spacing: -
 .section-head h2 { font-size: clamp(1.7rem, 3.6vw, 2.5rem); margin-bottom: 14px; }
 .section-lead { color: var(--muted); font-size: 1.05rem; }
 
+
+/* ---------- Uses ---------- */
+.uses { background: linear-gradient(180deg, var(--bg-2), transparent); }
+.uses-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.use-card {
+  position: relative; padding: 28px 26px; background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); transition: transform .2s ease, border-color .2s ease;
+}
+.use-card:hover { transform: translateY(-4px); border-color: var(--border-2); }
+.use-num { display: block; margin-bottom: 16px; font-family: var(--font-head); font-weight: 700; font-size: .9rem; color: var(--primary); }
+.use-card h3 { font-size: 1.18rem; margin-bottom: 10px; }
+.use-card p { color: var(--muted); font-size: .95rem; }
+.plan-list em { color: var(--primary); font-style: normal; white-space: nowrap; font-size: .88em; }
+
 /* ---------- How it works ---------- */
 .how { background: linear-gradient(180deg, transparent, var(--bg-2)); }
 .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
@@ -381,7 +395,7 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.12; letter-spacing: -
   .hero-sub { max-width: none; }
   .hero-copy, .hero-visual { order: initial; }
   .hero-mock { max-width: 380px; }
-  .steps, .sec-grid, .price-grid { grid-template-columns: 1fr 1fr; }
+  .steps, .uses-grid, .sec-grid, .price-grid { grid-template-columns: 1fr 1fr; }
   .compare-grid { grid-template-columns: 1fr; }
   .compare-divider { width: auto; height: 1px; }
   .compare-divider span { position: static; }
@@ -398,7 +412,7 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.12; letter-spacing: -
   .main-nav.open a { padding: 10px 0; font-size: 16px; }
   .section { padding: 66px 0; }
   .hero { padding: 60px 0 70px; }
-  .steps, .sec-grid, .price-grid { grid-template-columns: 1fr; }
+  .steps, .uses-grid, .sec-grid, .price-grid { grid-template-columns: 1fr; }
   .cta-inner { padding: 40px 24px; }
   .price-best { order: -1; }
 }
