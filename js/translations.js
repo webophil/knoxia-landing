@@ -140,7 +140,7 @@ export const translations = {
 export const localizedAssets = {
   fr: { heroMock: "/assets/mock-knoxia-1.webp" },
   en: { heroMock: "/assets/knoxia-en.webp" },
-  es: { heroMock: "/assets/knoxia-es.png" }
+  es: { heroMock: "/assets/knoxia-es.webp" }
 };
 
 Object.assign(translations.en, {
