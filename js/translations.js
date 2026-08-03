@@ -205,3 +205,7 @@ Object.assign(translations.en, {
 Object.assign(translations.es, {
   "Par <a href=\"https://phildev.fr\" target=\"_blank\" rel=\"noopener noreferrer\">PhilDEV.fr</a> Agence Web Reims France": "Por <a href=\"https://phildev.fr\" target=\"_blank\" rel=\"noopener noreferrer\">PhilDEV.fr</a>, agencia web en Reims, Francia"
 });
+
+Object.assign(translations.es, {
+  "Dérivation PBKDF2": "Derivación PBKDF2"
+});
