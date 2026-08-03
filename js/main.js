@@ -79,3 +79,31 @@
     });
   });
 })();
+
+const contactForm = document.querySelector("#contactForm");
+if (contactForm) {
+  const startedAt = document.querySelector("#contactStartedAt");
+  if (startedAt) startedAt.value = String(Date.now());
+  const toast = document.querySelector("#contactToast");
+  contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    if (!contactForm.reportValidity()) return;
+    const submit = contactForm.querySelector('button[type="submit"]');
+    submit.disabled = true;
+    try {
+      const response = await fetch("/api/contact", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(Object.fromEntries(new FormData(contactForm))) });
+      if (!response.ok) throw new Error("Contact request failed");
+      contactForm.reset();
+      if (startedAt) startedAt.value = String(Date.now());
+      toast.textContent = contactForm.dataset.successMessage;
+      toast.className = "contact-toast success";
+    } catch {
+      toast.textContent = contactForm.dataset.errorMessage;
+      toast.className = "contact-toast error";
+    } finally {
+      submit.disabled = false;
+      toast.hidden = false;
+      window.setTimeout(() => { toast.hidden = true; }, 6000);
+    }
+  });
+}
