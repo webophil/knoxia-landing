@@ -209,3 +209,7 @@ Object.assign(translations.es, {
 Object.assign(translations.es, {
   "Dérivation PBKDF2": "Derivación PBKDF2"
 });
+
+Object.assign(translations.en, {
+  "Dérivation PBKDF2": "PBKDF2 Key Derivation"
+});
