@@ -12,6 +12,14 @@ const pages = [
   {
     source: "index.html",
     routes: { fr: "/", en: "/en/", es: "/es/" }
+  },
+  {
+    source: "legal-notice.html",
+    routes: { fr: "/mentions-legales/", en: "/en/legal-notice/", es: "/es/aviso-legal/" }
+  },
+  {
+    source: "privacy-policy.html",
+    routes: { fr: "/politique-confidentialite/", en: "/en/privacy-policy/", es: "/es/politica-de-privacidad/" }
   }
 ];
 
@@ -27,8 +35,24 @@ function alternateLinks(routes, currentLocale) {
   return links.join("\n");
 }
 
+const routesBySource = Object.fromEntries(pages.map((page) => [page.source, page.routes]));
+
+function localizedPageLinks(html, locale) {
+  const links = {
+    "__HOME_URL__": routesBySource["index.html"][locale],
+    "__LEGAL_NOTICE_URL__": routesBySource["legal-notice.html"][locale],
+    "__PRIVACY_POLICY_URL__": routesBySource["privacy-policy.html"][locale]
+  };
+  for (const page of pages) {
+    const pageKey = page.source === "legal-notice.html" ? "LEGAL_NOTICE" : page.source === "privacy-policy.html" ? "PRIVACY_POLICY" : "HOME";
+    for (const language of locales) links[`__${pageKey}_${language.toUpperCase()}_URL__`] = page.routes[language];
+  }
+  for (const [placeholder, url] of Object.entries(links)) html = html.replaceAll(placeholder, url);
+  return html;
+}
+
 function translate(html, locale, routes) {
-  let localized = html.replace('<html lang="fr">', `<html lang="${locale}">`);
+  let localized = localizedPageLinks(html.replace('<html lang="fr">', `<html lang="${locale}">`), locale);
   const dictionary = translations[locale] || {};
   for (const [source, target] of Object.entries(dictionary).sort(([a], [b]) => b.length - a.length)) {
     localized = localized.replaceAll(source, target);
