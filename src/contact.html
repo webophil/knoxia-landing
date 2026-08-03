@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — KnoXia</title>
+  <meta name="description" content="Contactez l’équipe KnoXia." />
+  <!-- SEO_ALTERNATES -->
+  <link rel="icon" type="image/png" href="/assets/logo-knoxia.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/i18n.css" />
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="__HOME_URL__" class="brand" aria-label="KnoXia — accueil">
+        <img src="/assets/logo-knoxia.png" alt="Logo KnoXia" class="brand-logo" width="250" height="250" />
+        <span class="brand-name">KnoXia</span>
+      </a>
+      <div class="header-actions">
+        <div class="language-switcher" role="navigation" aria-label="Choisir la langue">
+          <a data-locale="fr" href="__CONTACT_FR_URL__" lang="fr">FR</a>
+          <a data-locale="en" href="__CONTACT_EN_URL__" lang="en">EN</a>
+          <a data-locale="es" href="__CONTACT_ES_URL__" lang="es">ES</a>
+        </div>
+        <a href="__HOME_URL__" class="btn btn-ghost btn-sm">Retour à l’accueil</a>
+      </div>
+    </div>
+  </header>
+  <main class="contact-page">
+    <section class="section">
+      <div class="container contact-content">
+        <div class="section-head">
+          <span class="kicker">Contact</span>
+          <h1>Contactez KnoXia</h1>
+          <p class="section-lead">Un Administrateur KnoXia vous répondra dans les 24 à 48 H.</p>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate data-success-message="Votre message a bien été envoyé. Nous vous répondrons dans les meilleurs délais." data-error-message="L’envoi a échoué. Veuillez réessayer ou écrire à contact@knoxia.eu.">
+          <div class="contact-grid">
+            <label>Prénom<input name="firstName" type="text" autocomplete="given-name" required maxlength="80" /></label>
+            <label>Nom<input name="lastName" type="text" autocomplete="family-name" required maxlength="80" /></label>
+          </div>
+          <label>Adresse e-mail<input name="email" type="email" autocomplete="email" required maxlength="254" /></label>
+          <label>Sujet<input name="subject" type="text" required maxlength="160" /></label>
+          <label>Message<textarea name="message" required maxlength="5000" rows="7"></textarea></label>
+          <label class="contact-honeypot" aria-hidden="true">Ne pas remplir<input name="company" type="text" tabindex="-1" autocomplete="off" /></label>
+          <input type="hidden" name="startedAt" id="contactStartedAt" />
+          <button type="submit" class="btn btn-primary">Envoyer le message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <div class="contact-toast" id="contactToast" role="status" aria-live="polite" hidden></div>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand"><a href="__HOME_URL__" class="brand"><img src="/assets/logo-knoxia.png" alt="Logo KnoXia" class="brand-logo" width="192" height="192" /><span class="brand-name">KnoXia</span></a><p>Coffre-fort documentaire chiffré. Vos fichiers, votre appareil, vos clés.</p></div>
+      <nav class="footer-links" aria-label="Liens du pied de page"><a href="__LEGAL_NOTICE_URL__">Mentions légales</a><a href="__PRIVACY_POLICY_URL__">Politique de confidentialité</a><a href="__CONTACT_URL__">Contact</a></nav>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year">2026</span> KnoXia. Tous droits réservés.</span><span>Par <a href="https://phildev.fr" target="_blank" rel="noopener noreferrer">PhilDEV.fr</a> Agence Web Reims France</span></div>
+  </footer>
+  <script type="module" src="/js/i18n.js"></script><script src="/js/main.js"></script>
+</body></html>

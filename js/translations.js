@@ -295,3 +295,20 @@ Object.assign(translations.es, {
   "Mise à jour": "Actualización",
   "Cette politique pourra évoluer en fonction des services effectivement proposés sur le site. Dernière mise à jour : 3 août 2026.": "Esta política podrá cambiar en función de los servicios que se ofrezcan efectivamente en el sitio. Última actualización: 3 de agosto de 2026."
 });
+
+Object.assign(translations.en, {
+  "Contact — KnoXia": "Contact — KnoXia", "Contactez l’équipe KnoXia.": "Contact the KnoXia team.", "Contactez KnoXia": "Contact KnoXia",
+  "Un Administrateur KnoXia vous répondra dans les 24 à 48 H.": "A KnoXia administrator will reply within 24 to 48 hours.",
+  "Prénom": "First name", "Nom": "Last name", "Adresse e-mail": "Email address", "Sujet": "Subject", "Message": "Message", "Ne pas remplir": "Do not fill in",
+  "Envoyer le message": "Send message", "Votre message a bien été envoyé. Nous vous répondrons dans les meilleurs délais.": "Your message has been sent. We will reply as soon as possible.",
+  "L’envoi a échoué. Veuillez réessayer ou écrire à contact@knoxia.eu.": "Sending failed. Please try again or email contact@knoxia.eu.",
+  "Un formulaire de contact simple est proposé.": "A simple contact form is available."
+});
+Object.assign(translations.es, {
+  "Contact — KnoXia": "Contacto — KnoXia", "Contactez l’équipe KnoXia.": "Contacta con el equipo de KnoXia.", "Contactez KnoXia": "Contacta con KnoXia",
+  "Un Administrateur KnoXia vous répondra dans les 24 à 48 H.": "Un administrador de KnoXia te responderá en un plazo de 24 a 48 horas.",
+  "Prénom": "Nombre", "Nom": "Apellidos", "Adresse e-mail": "Dirección de correo electrónico", "Sujet": "Asunto", "Message": "Mensaje", "Ne pas remplir": "No rellenar",
+  "Envoyer le message": "Enviar mensaje", "Votre message a bien été envoyé. Nous vous répondrons dans les meilleurs délais.": "Tu mensaje se ha enviado correctamente. Te responderemos lo antes posible.",
+  "L’envoi a échoué. Veuillez réessayer ou écrire à contact@knoxia.eu.": "El envío ha fallado. Vuelve a intentarlo o escribe a contact@knoxia.eu.",
+  "Un formulaire de contact simple est proposé.": "Hay disponible un sencillo formulario de contacto."
+});

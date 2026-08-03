@@ -20,6 +20,10 @@ const pages = [
   {
     source: "privacy-policy.html",
     routes: { fr: "/politique-confidentialite/", en: "/en/privacy-policy/", es: "/es/politica-de-privacidad/" }
+  },
+  {
+    source: "contact.html",
+    routes: { fr: "/contact/", en: "/en/contact/", es: "/es/contacto/" }
   }
 ];
 
@@ -41,10 +45,11 @@ function localizedPageLinks(html, locale) {
   const links = {
     "__HOME_URL__": routesBySource["index.html"][locale],
     "__LEGAL_NOTICE_URL__": routesBySource["legal-notice.html"][locale],
-    "__PRIVACY_POLICY_URL__": routesBySource["privacy-policy.html"][locale]
+    "__PRIVACY_POLICY_URL__": routesBySource["privacy-policy.html"][locale],
+    "__CONTACT_URL__": routesBySource["contact.html"][locale]
   };
   for (const page of pages) {
-    const pageKey = page.source === "legal-notice.html" ? "LEGAL_NOTICE" : page.source === "privacy-policy.html" ? "PRIVACY_POLICY" : "HOME";
+    const pageKey = page.source === "legal-notice.html" ? "LEGAL_NOTICE" : page.source === "privacy-policy.html" ? "PRIVACY_POLICY" : page.source === "contact.html" ? "CONTACT" : "HOME";
     for (const language of locales) links[`__${pageKey}_${language.toUpperCase()}_URL__`] = page.routes[language];
   }
   for (const [placeholder, url] of Object.entries(links)) html = html.replaceAll(placeholder, url);
