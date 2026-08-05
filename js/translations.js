@@ -312,3 +312,16 @@ Object.assign(translations.es, {
   "L’envoi a échoué. Veuillez réessayer ou écrire à contact@knoxia.eu.": "El envío ha fallado. Vuelve a intentarlo o escribe a contact@knoxia.eu.",
   "Un formulaire de contact simple est proposé.": "Hay disponible un sencillo formulario de contacto."
 });
+
+Object.assign(translations.en, {
+  "Sur Android": "On Android",
+  "Ouvrez KnoXia dans Chrome, puis touchez le menu <strong>⋮</strong> et choisissez <strong>« Installer l’application »</strong> ou <strong>« Ajouter à l’écran d’accueil »</strong>.": "Open KnoXia in Chrome, tap the <strong>⋮</strong> menu, then choose <strong>“Install app”</strong> or <strong>“Add to Home screen”</strong>.",
+  "Sur iPhone ou iPad": "On iPhone or iPad",
+  "Ouvrez KnoXia dans Safari, touchez <strong>Partager</strong> <span aria-hidden=\"true\">□↑</span>, puis choisissez <strong>« Sur l’écran d’accueil »</strong> et <strong>« Ajouter »</strong>.": "Open KnoXia in Safari, tap <strong>Share</strong> <span aria-hidden=\"true\">□↑</span>, then choose <strong>“Add to Home Screen”</strong> and <strong>“Add”</strong>."
+});
+Object.assign(translations.es, {
+  "Sur Android": "En Android",
+  "Ouvrez KnoXia dans Chrome, puis touchez le menu <strong>⋮</strong> et choisissez <strong>« Installer l’application »</strong> ou <strong>« Ajouter à l’écran d’accueil »</strong>.": "Abre KnoXia en Chrome, toca el menú <strong>⋮</strong> y elige <strong>« Instalar aplicación »</strong> o <strong>« Añadir a la pantalla de inicio »</strong>.",
+  "Sur iPhone ou iPad": "En iPhone o iPad",
+  "Ouvrez KnoXia dans Safari, touchez <strong>Partager</strong> <span aria-hidden=\"true\">□↑</span>, puis choisissez <strong>« Sur l’écran d’accueil »</strong> et <strong>« Ajouter »</strong>.": "Abre KnoXia en Safari, toca <strong>Compartir</strong> <span aria-hidden=\"true\">□↑</span>, luego elige <strong>« Añadir a pantalla de inicio »</strong> y <strong>« Añadir »</strong>."
+});
