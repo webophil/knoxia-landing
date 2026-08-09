@@ -321,3 +321,18 @@ Object.assign(translations.es, {
   "Sur iPhone ou iPad": "En iPhone o iPad",
   "Ouvrez KnoXia dans Safari, touchez <strong>Partager</strong> <span aria-hidden=\"true\">□↑</span>, puis choisissez <strong>« Sur l’écran d’accueil »</strong> et <strong>« Ajouter »</strong>.": "Abre KnoXia en Safari, toca <strong>Compartir</strong> <span aria-hidden=\"true\">□↑</span>, luego elige <strong>« Añadir a pantalla de inicio »</strong> y <strong>« Añadir »</strong>."
 });
+
+
+Object.assign(translations.en, {
+  "La sauvegarde Cloud chiffrée et la synchronisation sécurisée seront proposées prochainement. Les abonnements seront gérés dans l’application via Stripe.": "Encrypted Cloud backup and secure synchronisation will be available soon. Subscriptions will be managed in the app via Stripe.",
+  "4,99 € <span>par trimestre</span>": "€4.99 <span>per quarter</span>",
+  "7,99 € <span>tous les 6 mois</span>": "€7.99 <span>every 6 months</span>",
+  "11,99 € <span>par an</span>": "€11.99 <span>per year</span>"
+});
+
+Object.assign(translations.es, {
+  "La sauvegarde Cloud chiffrée et la synchronisation sécurisée seront proposées prochainement. Les abonnements seront gérés dans l’application via Stripe.": "La copia de seguridad Cloud cifrada y la sincronización segura estarán disponibles próximamente. Las suscripciones se gestionarán en la aplicación mediante Stripe.",
+  "4,99 € <span>par trimestre</span>": "4,99 € <span>por trimestre</span>",
+  "7,99 € <span>tous les 6 mois</span>": "7,99 € <span>cada 6 meses</span>",
+  "11,99 € <span>par an</span>": "11,99 € <span>al año</span>"
+});
