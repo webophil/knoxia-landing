@@ -282,6 +282,9 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.12; letter-spacing: -
 .price-card h3 { font-size: 1.15rem; color: var(--muted); font-weight: 600; }
 .price-amount { font-family: var(--font-head); font-weight: 700; font-size: 2.6rem; margin: 10px 0 4px; }
 .price-per { color: var(--primary); font-size: .9rem; font-weight: 500; margin-bottom: 22px; }
+/* Recurring billing label */
+.price-amount span { font-family: var(--font-body); font-size: .9rem; font-weight: 600; color: var(--muted); white-space: nowrap; }
+
 .price-feats { list-style: none; display: flex; flex-direction: column; gap: 11px; margin-bottom: 26px; }
 .price-feats li { position: relative; padding-left: 22px; font-size: .95rem; color: var(--muted); }
 .price-feats li::before { content: ""; position: absolute; left: 0; top: .55em; width: 8px; height: 8px; border-radius: 50%; background: var(--primary); }
