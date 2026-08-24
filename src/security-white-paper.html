@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Livre blanc sécurité — KnoXia</title>
+  <meta name="description" content="Découvrez comment KnoXia protège vos documents personnels : chiffrement local, code PIN, biométrie et sauvegarde Premium chiffrée." />
+  <!-- SEO_ALTERNATES -->
+  <link rel="icon" type="image/png" href="/assets/logo-knoxia.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/i18n.css" />
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="__HOME_URL__" class="brand" aria-label="KnoXia — accueil">
+        <img src="/assets/logo-knoxia.png" alt="Logo KnoXia" class="brand-logo" width="250" height="250" />
+        <span class="brand-name">KnoXia</span>
+      </a>
+      <div class="header-actions">
+        <div class="language-switcher" role="navigation" aria-label="Choisir la langue">
+          <a data-locale="fr" href="__WHITE_PAPER_FR_URL__" lang="fr">FR</a>
+          <a data-locale="en" href="__WHITE_PAPER_EN_URL__" lang="en">EN</a>
+          <a data-locale="es" href="__WHITE_PAPER_ES_URL__" lang="es">ES</a>
+        </div>
+        <a href="__HOME_URL__" class="btn btn-ghost btn-sm">Retour à l’accueil</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="whitepaper-page">
+    <section class="whitepaper-hero">
+      <div class="container">
+        <span class="kicker">Sécurité & confidentialité</span>
+        <h1>La sécurité de vos documents, expliquée simplement</h1>
+        <p class="whitepaper-lead">KnoXia est un coffre-fort personnel pour les documents qui ne doivent pas circuler : pièce d’identité, RIB, attestations d’assurance, photos privées, documents administratifs et informations confidentielles.</p>
+        <p class="whitepaper-meta">Livre blanc sécurité · Édition août 2026</p>
+      </div>
+    </section>
+
+    <section class="section whitepaper-section">
+      <div class="container whitepaper-content">
+        <aside class="whitepaper-summary">
+          <h2>En bref</h2>
+          <ul>
+            <li>Vos documents sont chiffrés localement.</li>
+            <li>Votre code PIN reste indispensable.</li>
+            <li>Le mode Free ne nécessite ni compte ni serveur.</li>
+            <li>Le mode Premium synchronise uniquement des données chiffrées.</li>
+          </ul>
+        </aside>
+
+        <div class="whitepaper-body">
+          <h2>1. Le rôle de KnoXia</h2>
+          <p>KnoXia vous aide à conserver sur votre mobile des documents personnels, officiels ou confidentiels dans un coffre distinct du reste de votre téléphone. Son objectif n’est pas de collecter vos données : il est de rendre leur lecture impossible sans l’accès à votre coffre.</p>
+
+          <h2>2. Le mode Free : un coffre local, sans compte</h2>
+          <p>En mode Free, le coffre fonctionne localement sur votre appareil. Aucun compte utilisateur n’est requis, aucun document n’est envoyé à un serveur et KnoXia ne diffuse pas de publicité. Vos données chiffrées restent dans le stockage local de l’application.</p>
+          <div class="whitepaper-alert">
+            <strong>Conséquence importante :</strong> si vous perdez votre code PIN en mode Free, personne — pas même KnoXia — ne peut retrouver ni déchiffrer vos documents.
+          </div>
+
+          <h2>3. Votre code PIN est la clé du coffre</h2>
+          <p>Lors de la création du coffre, vous choisissez un code PIN de 8 à 16 caractères. Ce code ne sert pas seulement à afficher un écran de verrouillage : il participe à la génération de la clé qui chiffre et déchiffre vos documents.</p>
+          <p>KnoXia utilise PBKDF2 avec 600&nbsp;000 itérations. Cette dérivation rend les tentatives automatisées de deviner un PIN beaucoup plus coûteuses. Le PIN reste votre secret : il n’est pas transmis à KnoXia, à Vercel ou à un service tiers.</p>
+
+          <h2>4. Les protections cryptographiques</h2>
+          <div class="security-reference-grid">
+            <article class="security-reference">
+              <h3>AES-256-GCM</h3>
+              <p>Les documents sont chiffrés localement avec AES-256-GCM. Ce standard protège la confidentialité du contenu et permet de détecter une modification non autorisée des données chiffrées.</p>
+              <a href="https://csrc.nist.gov/pubs/fips/197/final" target="_blank" rel="noopener noreferrer">Référence officielle NIST sur AES ↗</a>
+            </article>
+            <article class="security-reference">
+              <h3>PBKDF2 · 600&nbsp;000 itérations</h3>
+              <p>PBKDF2 transforme votre PIN en une clé de chiffrement en réalisant un grand nombre d’itérations. Cette étape ralentit fortement les essais par force brute.</p>
+              <a href="https://www.rfc-editor.org/rfc/rfc8018.html" target="_blank" rel="noopener noreferrer">Référence IETF RFC 8018 sur PBKDF2 ↗</a>
+            </article>
+            <article class="security-reference">
+              <h3>TLS 1.3 pour Premium</h3>
+              <p>Lors d’une sauvegarde ou d’une synchronisation Premium, le transfert utilise TLS 1.3. Les données sont déjà chiffrées avant cet envoi : TLS ajoute une protection au transport.</p>
+              <a href="https://www.rfc-editor.org/rfc/rfc8446.html" target="_blank" rel="noopener noreferrer">Référence IETF RFC 8446 sur TLS 1.3 ↗</a>
+            </article>
+          </div>
+
+          <h2>5. Biométrie : une alternative au PIN</h2>
+          <p>Selon les possibilités de votre appareil, vous pouvez utiliser votre empreinte digitale ou la reconnaissance faciale comme alternative pratique au PIN. Le PIN reste toujours disponible. Le verrouillage de KnoXia demeure distinct du verrouillage général du téléphone : un téléphone prêté et déverrouillé n’ouvre pas automatiquement le coffre KnoXia.</p>
+
+          <h2>6. Photos et import de documents</h2>
+          <p>Les photos prises directement depuis KnoXia sont conservées uniquement dans l’application. Lorsqu’un document est importé depuis la galerie ou les fichiers du mobile, KnoXia crée une copie chiffrée dans le coffre. L’original hors du coffre reste sous votre responsabilité : supprimez-le définitivement de la galerie s’il ne doit plus rester accessible en clair.</p>
+
+          <h2>7. Le mode Premium : sauvegarde et synchronisation chiffrées</h2>
+          <p>Le mode Premium ajoute la sauvegarde distante et la synchronisation du contenu chiffré. Chaque coffre Premium possède un identifiant technique unique. Une clé d’accès Premium est générée et reste uniquement en local ; elle permet à l’application de valider localement l’accès aux fonctions Premium.</p>
+          <p>Après cette validation, l’identifiant du coffre permet de récupérer ou de synchroniser son contenu chiffré. Vercel Blob ne reçoit ni votre code PIN, ni votre clé d’accès Premium, ni vos documents lisibles. La clé d’accès Premium ne remplace pas le PIN : le PIN demeure nécessaire pour déchiffrer le contenu du coffre.</p>
+
+          <h2>8. Transparence sur les vérifications</h2>
+          <p>La partie Free de KnoXia a fait l’objet d’une revue de sécurité assistée par Ito AI. Il ne s’agit pas d’une certification indépendante. La partie Premium, qui comprend la sauvegarde distante et la synchronisation, n’a pas encore fait l’objet d’un audit de sécurité dédié. KnoXia le précise afin que chaque utilisateur puisse prendre une décision éclairée.</p>
+
+          <h2>9. Ce que KnoXia ne peut pas garantir</h2>
+          <p>Aucune application ne peut neutraliser tous les risques. KnoXia ne peut pas protéger un appareil dont le système est compromis, un PIN communiqué à un tiers, ni une personne disposant d’un accès complet à votre téléphone et à vos moyens d’authentification. Protégez votre PIN, gardez votre appareil à jour et vérifiez qu’un import est terminé avant de supprimer son original.</p>
+
+          <h2>10. Notre engagement</h2>
+          <p>KnoXia privilégie un modèle simple : vos documents, votre appareil et vos clés. Nous préférons expliquer clairement les protections mises en œuvre et leurs limites plutôt que de promettre une sécurité absolue.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="__HOME_URL__" class="brand">
+          <img src="/assets/logo-knoxia.png" alt="Logo KnoXia" class="brand-logo" width="192" height="192" />
+          <span class="brand-name">KnoXia</span>
+        </a>
+        <p>Coffre-fort documentaire chiffré. Vos fichiers, votre appareil, vos clés.</p>
+      </div>
+      <nav class="footer-links" aria-label="Liens du pied de page">
+        <a href="__LEGAL_NOTICE_URL__">Mentions légales</a>
+        <a href="__PRIVACY_POLICY_URL__">Politique de confidentialité</a>
+        <a href="__CONTACT_URL__">Contact</a>
+        <a href="__WHITE_PAPER_URL__">Livre blanc sécurité</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year">2026</span> KnoXia. Tous droits réservés.</span>
+      <span>Par <a href="https://phildev.fr" target="_blank" rel="noopener noreferrer">PhilDEV.fr</a> Agence Web Reims France</span>
+    </div>
+  </footer>
+  <script type="module" src="/js/i18n.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
