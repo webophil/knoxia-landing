@@ -336,3 +336,12 @@ Object.assign(translations.es, {
   "7,99 € <span>tous les 6 mois</span>": "7,99 € <span>cada 6 meses</span>",
   "11,99 € <span>par an</span>": "11,99 € <span>al año</span>"
 });
+
+
+Object.assign(translations.en, {
+  "KnoXia installée comme application sur un mobile": "KnoXia installed as an app on a mobile device"
+});
+
+Object.assign(translations.es, {
+  "KnoXia installée comme application sur un mobile": "KnoXia instalada como aplicación en un móvil"
+});
