@@ -476,3 +476,28 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.12; letter-spacing: -
 .install-guide p { margin: 0; font-size: .93rem; line-height: 1.55; color: var(--muted); }
 .install-guide strong { color: var(--text); font-weight: 600; }
 @media (max-width: 600px) { .install-guides { grid-template-columns: 1fr; } }
+
+
+/* ---------- Security white paper ---------- */
+.whitepaper-hero { padding: 150px 0 68px; background: radial-gradient(circle at 50% 0, rgba(47,212,167,.14), transparent 56%); border-bottom: 1px solid var(--border); text-align: center; }
+.whitepaper-hero h1 { max-width: 800px; margin: 12px auto 18px; font-size: clamp(2.2rem, 5vw, 4.2rem); }
+.whitepaper-lead { max-width: 760px; margin: 0 auto; color: var(--muted); font-size: 1.12rem; line-height: 1.7; }
+.whitepaper-meta { margin: 22px 0 0; color: var(--primary); font-size: .85rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; }
+.whitepaper-section { padding-top: 68px; }
+.whitepaper-content { display: grid; grid-template-columns: minmax(220px, .48fr) minmax(0, 1.35fr); gap: clamp(34px, 7vw, 90px); align-items: start; }
+.whitepaper-summary { position: sticky; top: 112px; padding: 24px; border: 1px solid var(--border); border-radius: 16px; background: rgba(255,255,255,.025); }
+.whitepaper-summary h2 { font-size: 1.1rem; margin-bottom: 15px; }
+.whitepaper-summary ul { margin: 0; padding-left: 18px; color: var(--muted); font-size: .92rem; line-height: 1.65; }
+.whitepaper-body { max-width: 780px; }
+.whitepaper-body h2 { margin: 0; padding-top: 12px; font-size: clamp(1.45rem, 3vw, 2rem); }
+.whitepaper-body h2:not(:first-child) { margin-top: 52px; }
+.whitepaper-body h3 { color: var(--text); font-size: 1.08rem; }
+.whitepaper-body p { color: var(--muted); line-height: 1.8; margin-top: 15px; }
+.whitepaper-alert { margin-top: 22px; padding: 18px 20px; border: 1px solid rgba(47,212,167,.36); border-radius: 12px; background: rgba(47,212,167,.08); color: var(--text); line-height: 1.65; }
+.security-reference-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 24px; }
+.security-reference { padding: 22px; border: 1px solid var(--border); border-radius: 16px; background: rgba(255,255,255,.025); }
+.security-reference p { margin: 10px 0 16px; font-size: .92rem; line-height: 1.6; }
+.security-reference a { color: var(--primary); font-size: .88rem; font-weight: 600; line-height: 1.45; text-decoration: none; }
+.security-reference a:hover { text-decoration: underline; }
+@media (max-width: 820px) { .whitepaper-content { grid-template-columns: 1fr; } .whitepaper-summary { position: static; } .security-reference-grid { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .whitepaper-hero { padding: 124px 0 52px; } .whitepaper-section { padding-top: 45px; } .whitepaper-summary, .security-reference { padding: 20px; } }
