@@ -106,5 +106,52 @@ await Promise.all([
 for (const page of pages) {
   for (const locale of locales) await writePage(page, locale);
 }
+function llms() {
+  return `# KnoXia
+
+> KnoXia is a privacy-first personal document vault for mobile devices. Documents are encrypted locally and remain under the user's control.
+
+## Français
+
+- [Accueil](https://knoxia.eu/)
+- [Livre blanc sécurité](https://knoxia.eu/livre-blanc-securite/)
+- [Politique de confidentialité](https://knoxia.eu/politique-confidentialite/)
+- [Mentions légales](https://knoxia.eu/mentions-legales/)
+- [Contact](https://knoxia.eu/contact/)
+
+## English
+
+- [Home](https://knoxia.eu/en/)
+- [Security white paper](https://knoxia.eu/en/security-white-paper/)
+- [Privacy policy](https://knoxia.eu/en/privacy-policy/)
+- [Legal notice](https://knoxia.eu/en/legal-notice/)
+- [Contact](https://knoxia.eu/en/contact/)
+
+## Español
+
+- [Inicio](https://knoxia.eu/es/)
+- [Libro blanco de seguridad](https://knoxia.eu/es/libro-blanco-seguridad/)
+- [Política de privacidad](https://knoxia.eu/es/politica-de-privacidad/)
+- [Aviso legal](https://knoxia.eu/es/aviso-legal/)
+- [Contacto](https://knoxia.eu/es/contacto/)
+
+## Security summary
+
+- Free mode uses local encryption and requires neither an account nor a server.
+- A user-selected 8-to-16-character PIN participates in generating the encryption key through PBKDF2 with 600,000 iterations.
+- Documents are encrypted locally with AES-256-GCM.
+- Biometrics may be used as an alternative to the PIN when supported by the device.
+- Premium backup and synchronisation transfer encrypted content. Vercel Blob does not receive the PIN, the Premium access key or readable documents.
+- The Premium access key remains local and does not replace the PIN.
+
+## Technical references
+
+- [NIST FIPS 197 — AES](https://csrc.nist.gov/pubs/fips/197/final)
+- [IETF RFC 8018 — PBKDF2](https://www.rfc-editor.org/rfc/rfc8018.html)
+- [IETF RFC 8446 — TLS 1.3](https://www.rfc-editor.org/rfc/rfc8446.html)
+`;
+}
+
 await writeFile(path.join(outputDirectory, "sitemap.xml"), sitemap());
 await writeFile(path.join(outputDirectory, "robots.txt"), "User-agent: *\nAllow: /\nSitemap: https://knoxia.eu/sitemap.xml\n");
+await writeFile(path.join(outputDirectory, "llms.txt"), llms());
