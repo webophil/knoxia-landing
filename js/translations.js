@@ -195,11 +195,11 @@ Object.assign(translations.es, {
 });
 
 Object.assign(translations.en, {
-  "Par <a href=\"https://phildev.fr\" target=\"_blank\" rel=\"noopener noreferrer\">PhilDEV.fr</a> Agence Web Reims France": "By <a href=\"https://phildev.fr\" target=\"_blank\" rel=\"noopener noreferrer\">PhilDEV.fr</a>, web agency in Reims, France"
+  "Par <a href=\"https://phildev.fr\" target=\"_blank\" rel=\"noopener noreferrer\">PhilDEV.fr Agence Web Reims France</a>": "By <a href=\"https://phildev.fr\" target=\"_blank\" rel=\"noopener noreferrer\">PhilDEV.fr</a>, web agency in Reims, France"
 });
 
 Object.assign(translations.es, {
-  "Par <a href=\"https://phildev.fr\" target=\"_blank\" rel=\"noopener noreferrer\">PhilDEV.fr</a> Agence Web Reims France": "Por <a href=\"https://phildev.fr\" target=\"_blank\" rel=\"noopener noreferrer\">PhilDEV.fr</a>, agencia web en Reims, Francia"
+  "Par <a href=\"https://phildev.fr\" target=\"_blank\" rel=\"noopener noreferrer\">PhilDEV.fr Agence Web Reims France</a>": "Por <a href=\"https://phildev.fr\" target=\"_blank\" rel=\"noopener noreferrer\">PhilDEV.fr</a>, agencia web en Reims, Francia"
 });
 
 Object.assign(translations.es, {
