@@ -157,16 +157,16 @@ Object.assign(translations.en, {
   "La catégorie fixe « Secrets » protège vos informations sensibles au format texte : code PIN, code d’accès, combinaison de coffre ou d’alarme.": "The dedicated “Secrets” category protects sensitive text information: PINs, access codes, safe combinations or alarm codes.",
   "Partagez lorsque vous le décidez": "Share when you decide",
   "Envoyez ponctuellement un document déchiffré par e-mail ou SMS. Après le partage, sa copie reste chiffrée dans votre coffre : choisissez vos destinataires avec soin.": "Send a decrypted document by email or SMS when needed. After sharing, its copy remains encrypted in your vault: choose your recipients carefully.",
-  "Premium · bientôt": "Premium · coming soon",
-  "Tout le Gratuit, avec la sauvegarde Cloud chiffrée et la synchronisation sécurisée — prochainement.": "Everything in Free, plus encrypted Cloud backup and secure synchronisation — coming soon.",
-  "Sauvegarde Cloud chiffrée — bientôt": "Encrypted Cloud backup — coming soon",
-  "Synchronisation multi-appareils — bientôt": "Multi-device synchronisation — coming soon",
+  "Premium": "Premium",
+  "Tout le Gratuit, avec la sauvegarde Cloud chiffrée et la synchronisation sécurisée.": "Everything in Free, plus encrypted Cloud backup and secure synchronisation.",
+  "Sauvegarde Cloud chiffrée": "Encrypted Cloud backup",
+  "Synchronisation multi-appareils": "Multi-device synchronisation",
   "Découvrir Premium": "Discover Premium",
   "Des fonctions Premium pensées pour aller plus loin": "Premium features designed to go further",
-  "La sauvegarde Cloud chiffrée et la synchronisation sécurisée seront proposées prochainement.": "Encrypted Cloud backup and secure synchronisation will be available soon.",
-  "Sauvegarde Cloud chiffrée — bientôt": "Encrypted Cloud backup — coming soon",
-  "Synchronisation sécurisée — bientôt": "Secure synchronisation — coming soon",
-  "Être informé du lancement": "Get launch updates"
+  "La sauvegarde Cloud chiffrée et la synchronisation sécurisée sont incluses avec Premium.": "Encrypted Cloud backup and secure synchronisation are included with Premium.",
+  "Sauvegarde Cloud chiffrée": "Encrypted Cloud backup",
+  "Synchronisation sécurisée": "Secure synchronisation",
+  "Choisir Premium dans l’application": "Choose Premium in the app"
 });
 
 Object.assign(translations.es, {
@@ -183,15 +183,15 @@ Object.assign(translations.es, {
   "La catégorie fixe « Secrets » protège vos informations sensibles au format texte : code PIN, code d’accès, combinaison de coffre ou d’alarme.": "La categoría fija «Secretos» protege tu información sensible en formato texto: PIN, códigos de acceso, combinaciones de caja fuerte o de alarma.",
   "Partagez lorsque vous le décidez": "Comparte cuando tú decidas",
   "Envoyez ponctuellement un document déchiffré par e-mail ou SMS. Après le partage, sa copie reste chiffrée dans votre coffre : choisissez vos destinataires avec soin.": "Envía puntualmente un documento descifrado por correo electrónico o SMS. Tras compartirlo, su copia permanece cifrada en tu caja fuerte: elige a los destinatarios con cuidado.",
-  "Premium · bientôt": "Premium · próximamente",
-  "Tout le Gratuit, avec la sauvegarde Cloud chiffrée et la synchronisation sécurisée — prochainement.": "Todo lo incluido en Gratis, con copia de seguridad Cloud cifrada y sincronización segura — próximamente.",
-  "Sauvegarde Cloud chiffrée — bientôt": "Copia de seguridad Cloud cifrada — próximamente",
-  "Synchronisation multi-appareils — bientôt": "Sincronización multidispositivo — próximamente",
+  "Premium": "Premium",
+  "Tout le Gratuit, avec la sauvegarde Cloud chiffrée et la synchronisation sécurisée.": "Todo lo incluido en Gratis, con copia de seguridad Cloud cifrada y sincronización segura.",
+  "Sauvegarde Cloud chiffrée": "Copia de seguridad Cloud cifrada",
+  "Synchronisation multi-appareils": "Sincronización multidispositivo",
   "Découvrir Premium": "Descubrir Premium",
   "Des fonctions Premium pensées pour aller plus loin": "Funciones Premium para ir más allá",
-  "La sauvegarde Cloud chiffrée et la synchronisation sécurisée seront proposées prochainement.": "La copia de seguridad Cloud cifrada y la sincronización segura estarán disponibles próximamente.",
-  "Synchronisation sécurisée — bientôt": "Sincronización segura — próximamente",
-  "Être informé du lancement": "Recibir novedades del lanzamiento"
+  "La sauvegarde Cloud chiffrée et la synchronisation sécurisée sont incluses avec Premium.": "La copia de seguridad Cloud cifrada y la sincronización segura están incluidas con Premium.",
+  "Synchronisation sécurisée": "Sincronización segura",
+  "Choisir Premium dans l’application": "Elegir Premium en la aplicación"
 });
 
 Object.assign(translations.en, {
@@ -239,7 +239,7 @@ Object.assign(translations.en, {
   "Mesure d’audience et traceurs": "Audience measurement and trackers",
   "Le site n’utilise aucun cookie publicitaire, aucun outil de suivi comportemental et aucun autre traceur de navigation. Google Search Console est utilisée uniquement pour consulter des données agrégées de visibilité du site dans les résultats de recherche (référencement SEO/GEO). Elle ne permet pas à KnoXia de suivre votre navigation sur ce site.": "The website uses no advertising cookies, behavioural tracking tools or other browsing trackers. Google Search Console is used solely to view aggregated data about the website’s visibility in search results (SEO/GEO). It does not allow KnoXia to track your browsing on this website.",
   "Formulaire de contact": "Contact form",
-  "Un formulaire de contact simple sera prochainement proposé. Les données renseignées (nom, adresse e-mail, objet et message) seront utilisées uniquement pour répondre à votre demande. La base légale de ce traitement est l’intérêt légitime de KnoXia à répondre aux messages reçus.": "A simple contact form will be available soon. The data provided (name, email address, subject and message) will be used solely to respond to your request. The legal basis for this processing is KnoXia’s legitimate interest in responding to messages received.",
+  "Un formulaire de contact est disponible. Les données renseignées (nom, adresse e-mail, objet et message) sont utilisées uniquement pour répondre à votre demande. La base légale de ce traitement est l’intérêt légitime de KnoXia à répondre aux messages reçus.": "A contact form is available. The data provided (name, email address, subject and message) is used solely to respond to your request. The legal basis for this processing is KnoXia’s legitimate interest in responding to messages received.",
   "Destinataires et sous-traitants": "Recipients and processors",
   "Seules les personnes habilitées de KnoXia accèdent aux messages. L’envoi des e-mails du formulaire sera assuré par Mailjet, agissant comme sous-traitant. Le site est hébergé par Vercel.": "Only authorised KnoXia personnel can access messages. Form emails will be sent by Mailjet, acting as a processor. The website is hosted by Vercel.",
   "Durée de conservation": "Retention period",
@@ -280,7 +280,7 @@ Object.assign(translations.es, {
   "Mesure d’audience et traceurs": "Medición de audiencia y rastreadores",
   "Le site n’utilise aucun cookie publicitaire, aucun outil de suivi comportemental et aucun autre traceur de navigation. Google Search Console est utilisée uniquement pour consulter des données agrégées de visibilité du site dans les résultats de recherche (référencement SEO/GEO). Elle ne permet pas à KnoXia de suivre votre navigation sur ce site.": "El sitio no utiliza cookies publicitarias, herramientas de seguimiento del comportamiento ni otros rastreadores de navegación. Google Search Console se utiliza únicamente para consultar datos agregados sobre la visibilidad del sitio en los resultados de búsqueda (SEO/GEO). No permite a KnoXia seguir tu navegación por este sitio.",
   "Formulaire de contact": "Formulario de contacto",
-  "Un formulaire de contact simple sera prochainement proposé. Les données renseignées (nom, adresse e-mail, objet et message) seront utilisées uniquement pour répondre à votre demande. La base légale de ce traitement est l’intérêt légitime de KnoXia à répondre aux messages reçus.": "Próximamente se ofrecerá un sencillo formulario de contacto. Los datos proporcionados (nombre, dirección de correo electrónico, asunto y mensaje) se utilizarán únicamente para responder a tu solicitud. La base jurídica de este tratamiento es el interés legítimo de KnoXia en responder a los mensajes recibidos.",
+  "Un formulaire de contact est disponible. Les données renseignées (nom, adresse e-mail, objet et message) sont utilisées uniquement pour répondre à votre demande. La base légale de ce traitement est l’intérêt légitime de KnoXia à répondre aux messages reçus.": "Hay un formulario de contacto disponible. Los datos proporcionados (nombre, dirección de correo electrónico, asunto y mensaje) se utilizan únicamente para responder a tu solicitud. La base jurídica de este tratamiento es el interés legítimo de KnoXia en responder a los mensajes recibidos.",
   "Destinataires et sous-traitants": "Destinatarios y encargados del tratamiento",
   "Seules les personnes habilitées de KnoXia accèdent aux messages. L’envoi des e-mails du formulaire sera assuré par Mailjet, agissant comme sous-traitant. Le site est hébergé par Vercel.": "Solo las personas autorizadas de KnoXia acceden a los mensajes. Mailjet, como encargado del tratamiento, gestionará el envío de los correos del formulario. El sitio está alojado por Vercel.",
   "Durée de conservation": "Plazo de conservación",
@@ -324,14 +324,14 @@ Object.assign(translations.es, {
 
 
 Object.assign(translations.en, {
-  "La sauvegarde Cloud chiffrée et la synchronisation sécurisée seront proposées prochainement. Les abonnements seront gérés dans l’application via Stripe.": "Encrypted Cloud backup and secure synchronisation will be available soon. Subscriptions will be managed in the app via Stripe.",
+  "La sauvegarde Cloud chiffrée et la synchronisation sécurisée sont incluses avec Premium. Les abonnements Premium sont gérés dans l’application via Stripe.": "Encrypted Cloud backup and secure synchronisation are included with Premium. Premium subscriptions are managed in the app via Stripe.",
   "4,99 € <span>par trimestre</span>": "€4.99 <span>per quarter</span>",
   "7,99 € <span>tous les 6 mois</span>": "€7.99 <span>every 6 months</span>",
   "11,99 € <span>par an</span>": "€11.99 <span>per year</span>"
 });
 
 Object.assign(translations.es, {
-  "La sauvegarde Cloud chiffrée et la synchronisation sécurisée seront proposées prochainement. Les abonnements seront gérés dans l’application via Stripe.": "La copia de seguridad Cloud cifrada y la sincronización segura estarán disponibles próximamente. Las suscripciones se gestionarán en la aplicación mediante Stripe.",
+  "La sauvegarde Cloud chiffrée et la synchronisation sécurisée sont incluses avec Premium. Les abonnements Premium sont gérés dans l’application via Stripe.": "La copia de seguridad Cloud cifrada y la sincronización segura están incluidas con Premium. Las suscripciones Premium se gestionan en la aplicación mediante Stripe.",
   "4,99 € <span>par trimestre</span>": "4,99 € <span>por trimestre</span>",
   "7,99 € <span>tous les 6 mois</span>": "7,99 € <span>cada 6 meses</span>",
   "11,99 € <span>par an</span>": "11,99 € <span>al año</span>"
