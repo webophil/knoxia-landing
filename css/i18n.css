@@ -9,7 +9,10 @@
   background: rgba(255, 255, 255, .03);
 }
 .language-switcher [data-locale] {
-  min-width: 31px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 48px;
   border: 0;
   border-radius: 999px;
   padding: 5px 7px;
@@ -19,8 +22,11 @@
   letter-spacing: .04em;
   cursor: pointer;
 }
+.language-flag {
+  font: 15px/1 system-ui, sans-serif;
+}
 .language-switcher [data-locale]:hover,
-.language-switcher [data-locale][aria-pressed="true"] {
+.language-switcher [data-locale][aria-current="page"] {
   background: var(--primary);
   color: #04120c;
 }
@@ -29,5 +35,5 @@
 }
 @media (max-width: 560px) {
   .language-switcher { order: 2; }
-  .language-switcher [data-locale] { min-width: 28px; padding: 5px; }
+  .language-switcher [data-locale] { min-width: 45px; padding: 5px; }
 }
