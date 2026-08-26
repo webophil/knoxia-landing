@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://knoxia.eu/</loc>
+    <lastmod>2026-08-26</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://knoxia.eu/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://knoxia.eu/en/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://knoxia.eu/es/" />
@@ -9,6 +10,7 @@
   </url>
   <url>
     <loc>https://knoxia.eu/en/</loc>
+    <lastmod>2026-08-26</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://knoxia.eu/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://knoxia.eu/en/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://knoxia.eu/es/" />
@@ -16,6 +18,7 @@
   </url>
   <url>
     <loc>https://knoxia.eu/es/</loc>
+    <lastmod>2026-08-26</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://knoxia.eu/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://knoxia.eu/en/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://knoxia.eu/es/" />
@@ -24,6 +27,7 @@
 
   <url>
     <loc>https://knoxia.eu/mentions-legales/</loc>
+    <lastmod>2026-08-26</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://knoxia.eu/mentions-legales/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://knoxia.eu/en/legal-notice/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://knoxia.eu/es/aviso-legal/" />
@@ -31,6 +35,7 @@
   </url>
   <url>
     <loc>https://knoxia.eu/en/legal-notice/</loc>
+    <lastmod>2026-08-26</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://knoxia.eu/mentions-legales/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://knoxia.eu/en/legal-notice/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://knoxia.eu/es/aviso-legal/" />
@@ -38,6 +43,7 @@
   </url>
   <url>
     <loc>https://knoxia.eu/es/aviso-legal/</loc>
+    <lastmod>2026-08-26</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://knoxia.eu/mentions-legales/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://knoxia.eu/en/legal-notice/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://knoxia.eu/es/aviso-legal/" />
@@ -46,6 +52,7 @@
 
   <url>
     <loc>https://knoxia.eu/politique-confidentialite/</loc>
+    <lastmod>2026-08-26</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://knoxia.eu/politique-confidentialite/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://knoxia.eu/en/privacy-policy/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://knoxia.eu/es/politica-de-privacidad/" />
@@ -53,6 +60,7 @@
   </url>
   <url>
     <loc>https://knoxia.eu/en/privacy-policy/</loc>
+    <lastmod>2026-08-26</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://knoxia.eu/politique-confidentialite/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://knoxia.eu/en/privacy-policy/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://knoxia.eu/es/politica-de-privacidad/" />
@@ -60,6 +68,7 @@
   </url>
   <url>
     <loc>https://knoxia.eu/es/politica-de-privacidad/</loc>
+    <lastmod>2026-08-26</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://knoxia.eu/politique-confidentialite/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://knoxia.eu/en/privacy-policy/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://knoxia.eu/es/politica-de-privacidad/" />
@@ -68,6 +77,7 @@
 
   <url>
     <loc>https://knoxia.eu/contact/</loc>
+    <lastmod>2026-08-26</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://knoxia.eu/contact/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://knoxia.eu/en/contact/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://knoxia.eu/es/contacto/" />
@@ -75,6 +85,7 @@
   </url>
   <url>
     <loc>https://knoxia.eu/en/contact/</loc>
+    <lastmod>2026-08-26</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://knoxia.eu/contact/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://knoxia.eu/en/contact/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://knoxia.eu/es/contacto/" />
@@ -82,6 +93,7 @@
   </url>
   <url>
     <loc>https://knoxia.eu/es/contacto/</loc>
+    <lastmod>2026-08-26</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://knoxia.eu/contact/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://knoxia.eu/en/contact/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://knoxia.eu/es/contacto/" />
@@ -90,6 +102,7 @@
 
   <url>
     <loc>https://knoxia.eu/livre-blanc-securite/</loc>
+    <lastmod>2026-08-26</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://knoxia.eu/livre-blanc-securite/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://knoxia.eu/en/security-white-paper/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://knoxia.eu/es/libro-blanco-seguridad/" />
@@ -97,6 +110,7 @@
   </url>
   <url>
     <loc>https://knoxia.eu/en/security-white-paper/</loc>
+    <lastmod>2026-08-26</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://knoxia.eu/livre-blanc-securite/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://knoxia.eu/en/security-white-paper/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://knoxia.eu/es/libro-blanco-seguridad/" />
@@ -104,6 +118,7 @@
   </url>
   <url>
     <loc>https://knoxia.eu/es/libro-blanco-seguridad/</loc>
+    <lastmod>2026-08-26</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://knoxia.eu/livre-blanc-securite/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://knoxia.eu/en/security-white-paper/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://knoxia.eu/es/libro-blanco-seguridad/" />
