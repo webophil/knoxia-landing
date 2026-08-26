@@ -1,7 +1,7 @@
 export const translations = {
     en: {
-      "KnoXia — Coffre-fort documentaire chiffré pour mobiles": "KnoXia — Encrypted document vault for mobile",
-      "KnoXia protège vos documents avec un chiffrement local AES-256-GCM. 100% gratuit, sans serveur, sans traçage. Sauvegarde cloud Premium en architecture zero-knowledge.": "KnoXia protects your documents with local AES-256-GCM encryption. 100% free, serverless and tracking-free. Premium cloud backup with a zero-knowledge architecture.",
+      "KnoXia — Coffre-fort numérique gratuit sur mobile": "KnoXia — Free personal digital vault for mobile",
+      "KnoXia est un coffre-fort numérique personnel gratuit pour vos documents sur téléphone : chiffrement AES-256-GCM local, sans traçage.": "KnoXia is a free personal digital vault for documents on your phone: local AES-256-GCM encryption, with no tracking.",
       "KnoXia — accueil": "KnoXia — home",
       "Logo KnoXia": "KnoXia logo",
       "Navigation principale": "Main navigation",
@@ -114,8 +114,8 @@ export const translations = {
       "KnoXia. Tous droits réservés.": "KnoXia. All rights reserved."
     },
     es: {
-      "KnoXia — Coffre-fort documentaire chiffré pour mobiles": "KnoXia — Bóveda documental cifrada para móviles",
-      "KnoXia protège vos documents avec un chiffrement local AES-256-GCM. 100% gratuit, sans serveur, sans traçage. Sauvegarde cloud Premium en architecture zero-knowledge.": "KnoXia protege tus documentos con cifrado local AES-256-GCM. 100% gratuito, sin servidores ni rastreo. Copia de seguridad Premium en la nube con arquitectura de conocimiento cero.",
+      "KnoXia — Coffre-fort numérique gratuit sur mobile": "KnoXia — Caja fuerte digital gratuita para móvil",
+      "KnoXia est un coffre-fort numérique personnel gratuit pour vos documents sur téléphone : chiffrement AES-256-GCM local, sans traçage.": "KnoXia es una caja fuerte digital personal gratuita para documentos en tu teléfono: cifrado local AES-256-GCM, sin rastreo.",
       "KnoXia — accueil": "KnoXia — inicio", "Logo KnoXia": "Logotipo de KnoXia", "Navigation principale": "Navegación principal",
       "Fonctionnement": "Cómo funciona", "Nos Offres": "Nuestros planes", "Sécurité": "Seguridad", "Installer KnoXia sur mon mobile": "Instalar KnoXia en mi móvil", "Ouvrir le menu": "Abrir menú", "Fermer le menu": "Cerrar menú",
       "Chiffrement local AES-256-GCM": "Cifrado local AES-256-GCM", "Vos documents mobiles dans": "Tus documentos móviles en", "Chiffrés. Pour toujours.": "Cifrados. Para siempre.", ". Chiffrés. Pour toujours.": ". Cifrados. Para siempre.",
@@ -136,6 +136,15 @@ export const translations = {
       "Reprenez le contrôle de vos données": "Recupera el control de tus datos", "Commencez à protéger vos documents dès aujourd'hui. Gratuit pour toujours, options Premium disponibles.": "Empieza a proteger tus documentos hoy mismo. Gratis para siempre, con opciones Premium disponibles.", "L'App KnoXia est disponible uniquement sous forme de Progressive Web Application, à installer sur l'écran d'accueil de votre mobile, avec exactement le même fonctionnement qu'une application mobile native, sans les inconvénients. Vous retrouverez KnoXia dans la liste de vos applications déjà installées, et vous pourrez la gérer exactement de la même manière. Vous accédez à KnoXia en cliquant l'îcone installée sur votre écran.": "La aplicación KnoXia solo está disponible como Progressive Web App. Instálala en la pantalla de inicio de tu móvil y funcionará exactamente como una aplicación nativa, sin sus inconvenientes. Encontrarás KnoXia en la lista de aplicaciones instaladas y podrás gestionarla del mismo modo. Accede a KnoXia pulsando su icono en la pantalla.", "En choisissant le format PWA, KnoXia vous assure une totale indépendance vis-à-vis des Stores classiques, une mise à jour en temps réel de l'app et un fonctionnement 100 % hors-ligne disponible.": "Al elegir el formato PWA, KnoXia te ofrece independencia total de las tiendas de aplicaciones tradicionales, actualizaciones en tiempo real y funcionamiento 100 % sin conexión.", "Scannez le code avec votre mobile pour ouvrir l'app :": "Escanea el código con tu móvil para abrir la aplicación:", "Ouvrir l'application KnoXia sur app.knoxia.eu": "Abrir la aplicación KnoXia en app.knoxia.eu", "QR code vers l'application KnoXia (https://app.knoxia.eu)": "Código QR para la aplicación KnoXia (https://app.knoxia.eu)", "Coffre-fort documentaire chiffré. Vos fichiers, votre appareil, vos clés.": "Bóveda documental cifrada. Tus archivos, tu dispositivo, tus claves.", "Liens du pied de page": "Enlaces del pie de página", "Politique de confidentialité": "Política de privacidad", "Conditions d'utilisation": "Condiciones de uso", "Livre blanc sécurité": "Libro blanco de seguridad", "Tous droits réservés.": "Todos los derechos reservados.", "KnoXia. Tous droits réservés.": "KnoXia. Todos los derechos reservados."
     }
   };
+
+
+Object.assign(translations.en, {
+  ", le coffre-fort numérique gratuit de vos documents sur mobile. Chiffrés. Pour toujours.": ", the free personal digital vault for your mobile documents. Encrypted. Forever."
+});
+
+Object.assign(translations.es, {
+  ", le coffre-fort numérique gratuit de vos documents sur mobile. Chiffrés. Pour toujours.": ", la caja fuerte digital gratuita para tus documentos en el móvil. Cifrados. Para siempre."
+});
 
 export const localizedAssets = {
   fr: { heroMock: "/assets/mock-knoxia-1.webp" },
