@@ -85,23 +85,14 @@ async function writePage(page, locale) {
   await writeFile(target, translate(template, locale, page.routes));
 }
 
-function sitemap() {
-  const entries = [];
-  for (const page of pages) {
-    for (const locale of locales) {
-      const links = locales.map((alternativeLocale) => `    <xhtml:link rel="alternate" hreflang="${alternativeLocale}" href="${siteUrl + page.routes[alternativeLocale]}" />`).join("\n");
-      entries.push(`  <url>\n    <loc>${siteUrl + page.routes[locale]}</loc>\n${links}\n    <xhtml:link rel="alternate" hreflang="x-default" href="${siteUrl + page.routes.fr}" />\n  </url>`);
-    }
-  }
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${entries.join("\n")}\n</urlset>\n`;
-}
 
 await rm(outputDirectory, { recursive: true, force: true });
 await mkdir(outputDirectory, { recursive: true });
 await Promise.all([
   cp(path.join(root, "assets"), path.join(outputDirectory, "assets"), { recursive: true }),
   cp(path.join(root, "css"), path.join(outputDirectory, "css"), { recursive: true }),
-  cp(path.join(root, "js"), path.join(outputDirectory, "js"), { recursive: true })
+  cp(path.join(root, "js"), path.join(outputDirectory, "js"), { recursive: true }),
+  cp(path.join(root, "public"), outputDirectory, { recursive: true })
 ]);
 for (const page of pages) {
   for (const locale of locales) await writePage(page, locale);
@@ -152,6 +143,5 @@ function llms() {
 `;
 }
 
-await writeFile(path.join(outputDirectory, "sitemap.xml"), sitemap());
 await writeFile(path.join(outputDirectory, "robots.txt"), "User-agent: *\nAllow: /\nSitemap: https://knoxia.eu/sitemap.xml\n");
 await writeFile(path.join(outputDirectory, "llms.txt"), llms());
