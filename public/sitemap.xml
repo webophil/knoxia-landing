@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://knoxia.eu/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knoxia.eu/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://knoxia.eu/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://knoxia.eu/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knoxia.eu/" />
+  </url>
+  <url>
+    <loc>https://knoxia.eu/en/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knoxia.eu/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://knoxia.eu/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://knoxia.eu/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knoxia.eu/" />
+  </url>
+  <url>
+    <loc>https://knoxia.eu/es/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knoxia.eu/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://knoxia.eu/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://knoxia.eu/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knoxia.eu/" />
+  </url>
+
+  <url>
+    <loc>https://knoxia.eu/mentions-legales/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knoxia.eu/mentions-legales/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://knoxia.eu/en/legal-notice/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://knoxia.eu/es/aviso-legal/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knoxia.eu/mentions-legales/" />
+  </url>
+  <url>
+    <loc>https://knoxia.eu/en/legal-notice/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knoxia.eu/mentions-legales/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://knoxia.eu/en/legal-notice/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://knoxia.eu/es/aviso-legal/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knoxia.eu/mentions-legales/" />
+  </url>
+  <url>
+    <loc>https://knoxia.eu/es/aviso-legal/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knoxia.eu/mentions-legales/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://knoxia.eu/en/legal-notice/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://knoxia.eu/es/aviso-legal/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knoxia.eu/mentions-legales/" />
+  </url>
+
+  <url>
+    <loc>https://knoxia.eu/politique-confidentialite/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knoxia.eu/politique-confidentialite/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://knoxia.eu/en/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://knoxia.eu/es/politica-de-privacidad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knoxia.eu/politique-confidentialite/" />
+  </url>
+  <url>
+    <loc>https://knoxia.eu/en/privacy-policy/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knoxia.eu/politique-confidentialite/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://knoxia.eu/en/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://knoxia.eu/es/politica-de-privacidad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knoxia.eu/politique-confidentialite/" />
+  </url>
+  <url>
+    <loc>https://knoxia.eu/es/politica-de-privacidad/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knoxia.eu/politique-confidentialite/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://knoxia.eu/en/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://knoxia.eu/es/politica-de-privacidad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knoxia.eu/politique-confidentialite/" />
+  </url>
+
+  <url>
+    <loc>https://knoxia.eu/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knoxia.eu/contact/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://knoxia.eu/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://knoxia.eu/es/contacto/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knoxia.eu/contact/" />
+  </url>
+  <url>
+    <loc>https://knoxia.eu/en/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knoxia.eu/contact/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://knoxia.eu/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://knoxia.eu/es/contacto/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knoxia.eu/contact/" />
+  </url>
+  <url>
+    <loc>https://knoxia.eu/es/contacto/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knoxia.eu/contact/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://knoxia.eu/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://knoxia.eu/es/contacto/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knoxia.eu/contact/" />
+  </url>
+
+  <url>
+    <loc>https://knoxia.eu/livre-blanc-securite/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knoxia.eu/livre-blanc-securite/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://knoxia.eu/en/security-white-paper/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://knoxia.eu/es/libro-blanco-seguridad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knoxia.eu/livre-blanc-securite/" />
+  </url>
+  <url>
+    <loc>https://knoxia.eu/en/security-white-paper/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knoxia.eu/livre-blanc-securite/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://knoxia.eu/en/security-white-paper/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://knoxia.eu/es/libro-blanco-seguridad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knoxia.eu/livre-blanc-securite/" />
+  </url>
+  <url>
+    <loc>https://knoxia.eu/es/libro-blanco-seguridad/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knoxia.eu/livre-blanc-securite/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://knoxia.eu/en/security-white-paper/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://knoxia.eu/es/libro-blanco-seguridad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knoxia.eu/livre-blanc-securite/" />
+  </url>
+</urlset>
