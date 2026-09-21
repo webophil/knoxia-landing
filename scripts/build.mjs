@@ -128,18 +128,16 @@ function llms() {
 
 ## Security summary
 
-- Free mode uses local encryption and requires neither an account nor a server.
+- KnoXia uses local encryption and requires neither an account nor a server.
 - A user-selected 8-to-16-character PIN participates in generating the encryption key through PBKDF2 with 600,000 iterations.
 - Documents are encrypted locally with AES-256-GCM.
 - Biometrics may be used as an alternative to the PIN when supported by the device.
-- Premium backup and synchronisation transfer encrypted content. Vercel Blob does not receive the PIN, the Premium access key or readable documents.
-- The Premium access key remains local and does not replace the PIN.
+- Documents remain in the application's local storage; KnoXia does not provide remote backup or synchronisation.
 
 ## Technical references
 
 - [NIST FIPS 197 — AES](https://csrc.nist.gov/pubs/fips/197/final)
 - [IETF RFC 8018 — PBKDF2](https://www.rfc-editor.org/rfc/rfc8018.html)
-- [IETF RFC 8446 — TLS 1.3](https://www.rfc-editor.org/rfc/rfc8446.html)
 `;
 }
 
