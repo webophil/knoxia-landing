@@ -195,6 +195,21 @@ Object.assign(translations.es, {
   "9. Notre engagement": "9. Nuestro compromiso"
 });
 
+
+Object.assign(translations.en, {
+  "Vous aimez KnoXia ?": "Do you like KnoXia?",
+  "KnoXia restera gratuite pour tous. Si elle vous est utile, vous pouvez offrir un café à PhilDEV pour soutenir son développement.": "KnoXia will remain free for everyone. If it is useful to you, you can buy PhilDEV a coffee to support its development.",
+  "Offrir un café à PhilDEV": "Buy PhilDEV a coffee",
+  "Soutenir KnoXia": "Support KnoXia"
+});
+
+Object.assign(translations.es, {
+  "Vous aimez KnoXia ?": "¿Te gusta KnoXia?",
+  "KnoXia restera gratuite pour tous. Si elle vous est utile, vous pouvez offrir un café à PhilDEV pour soutenir son développement.": "KnoXia seguirá siendo gratuita para todos. Si te resulta útil, puedes invitar a PhilDEV a un café para apoyar su desarrollo.",
+  "Offrir un café à PhilDEV": "Invitar a PhilDEV a un café",
+  "Soutenir KnoXia": "Apoyar KnoXia"
+});
+
 export const localizedAssets = {
   fr: { heroMock: "/assets/mock-knoxia-1.webp" },
   en: { heroMock: "/assets/knoxia-en.webp" },
