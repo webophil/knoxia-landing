@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Livre blanc sécurité — KnoXia</title>
-  <meta name="description" content="Découvrez comment KnoXia protège vos documents personnels : chiffrement local, code PIN, biométrie et sauvegarde Premium chiffrée." />
+  <meta name="description" content="Découvrez comment KnoXia protège vos documents personnels : chiffrement local, code PIN et biométrie, sans serveur ni compte." />
   <!-- SEO_ALTERNATES -->
   <link rel="icon" type="image/png" href="/assets/logo-knoxia.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -48,8 +48,7 @@
           <ul>
             <li>Vos documents sont chiffrés localement.</li>
             <li>Votre code PIN reste indispensable.</li>
-            <li>Le mode Free ne nécessite ni compte ni serveur.</li>
-            <li>Le mode Premium synchronise uniquement des données chiffrées.</li>
+            <li>Votre coffre fonctionne hors ligne, sans compte ni serveur.</li>
           </ul>
         </aside>
 
@@ -57,10 +56,10 @@
           <h2>1. Le rôle de KnoXia</h2>
           <p>KnoXia vous aide à conserver sur votre mobile des documents personnels, officiels ou confidentiels dans un coffre distinct du reste de votre téléphone. Son objectif n’est pas de collecter vos données : il est de rendre leur lecture impossible sans l’accès à votre coffre.</p>
 
-          <h2>2. Le mode Free : un coffre local, sans compte</h2>
-          <p>En mode Free, le coffre fonctionne localement sur votre appareil. Aucun compte utilisateur n’est requis, aucun document n’est envoyé à un serveur et KnoXia ne diffuse pas de publicité. Vos données chiffrées restent dans le stockage local de l’application.</p>
+          <h2>2. Un coffre local, sans compte</h2>
+          <p>KnoXia fonctionne localement sur votre appareil. Aucun compte utilisateur n’est requis, aucun document n’est envoyé à un serveur et KnoXia ne diffuse pas de publicité. Vos données chiffrées restent dans le stockage local de l’application.</p>
           <div class="whitepaper-alert">
-            <strong>Conséquence importante :</strong> si vous perdez votre code PIN en mode Free, personne — pas même KnoXia — ne peut retrouver ni déchiffrer vos documents.
+            <strong>Conséquence importante :</strong> si vous perdez votre code PIN, personne — pas même KnoXia — ne peut retrouver ni déchiffrer vos documents.
           </div>
 
           <h2>3. Votre code PIN est la clé du coffre</h2>
@@ -79,11 +78,6 @@
               <p>PBKDF2 transforme votre PIN en une clé de chiffrement en réalisant un grand nombre d’itérations. Cette étape ralentit fortement les essais par force brute.</p>
               <a href="https://www.rfc-editor.org/rfc/rfc8018.html" target="_blank" rel="noopener noreferrer">Référence IETF RFC 8018 sur PBKDF2 ↗</a>
             </article>
-            <article class="security-reference">
-              <h3>TLS 1.3 pour Premium</h3>
-              <p>Lors d’une sauvegarde ou d’une synchronisation Premium, le transfert utilise TLS 1.3. Les données sont déjà chiffrées avant cet envoi : TLS ajoute une protection au transport.</p>
-              <a href="https://www.rfc-editor.org/rfc/rfc8446.html" target="_blank" rel="noopener noreferrer">Référence IETF RFC 8446 sur TLS 1.3 ↗</a>
-            </article>
           </div>
 
           <h2>5. Biométrie : une alternative au PIN</h2>
@@ -92,17 +86,14 @@
           <h2>6. Photos et import de documents</h2>
           <p>Les photos prises directement depuis KnoXia sont conservées uniquement dans l’application. Lorsqu’un document est importé depuis la galerie ou les fichiers du mobile, KnoXia crée une copie chiffrée dans le coffre. L’original hors du coffre reste sous votre responsabilité : supprimez-le définitivement de la galerie s’il ne doit plus rester accessible en clair.</p>
 
-          <h2>7. Le mode Premium : sauvegarde et synchronisation chiffrées</h2>
-          <p>Le mode Premium ajoute la sauvegarde distante et la synchronisation du contenu chiffré. Chaque coffre Premium possède un identifiant technique unique. Une clé d’accès Premium est générée et reste uniquement en local ; elle permet à l’application de valider localement l’accès aux fonctions Premium.</p>
-          <p>Après cette validation, l’identifiant du coffre permet de récupérer ou de synchroniser son contenu chiffré. Vercel Blob ne reçoit ni votre code PIN, ni votre clé d’accès Premium, ni vos documents lisibles. La clé d’accès Premium ne remplace pas le PIN : le PIN demeure nécessaire pour déchiffrer le contenu du coffre.</p>
 
-          <h2>8. Transparence sur les vérifications</h2>
-          <p>La partie Free de KnoXia a fait l’objet d’une revue de sécurité assistée par Ito AI. Il ne s’agit pas d’une certification indépendante. La partie Premium, qui comprend la sauvegarde distante et la synchronisation, n’a pas encore fait l’objet d’un audit de sécurité dédié. KnoXia le précise afin que chaque utilisateur puisse prendre une décision éclairée.</p>
+          <h2>7. Transparence sur les vérifications</h2>
+          <p>KnoXia a fait l’objet d’une revue de sécurité assistée par Ito AI. Il ne s’agit pas d’une certification indépendante. KnoXia le précise afin que chaque utilisateur puisse prendre une décision éclairée.</p>
 
-          <h2>9. Ce que KnoXia ne peut pas garantir</h2>
+          <h2>8. Ce que KnoXia ne peut pas garantir</h2>
           <p>Aucune application ne peut neutraliser tous les risques. KnoXia ne peut pas protéger un appareil dont le système est compromis, un PIN communiqué à un tiers, ni une personne disposant d’un accès complet à votre téléphone et à vos moyens d’authentification. Protégez votre PIN, gardez votre appareil à jour et vérifiez qu’un import est terminé avant de supprimer son original.</p>
 
-          <h2>10. Notre engagement</h2>
+          <h2>9. Notre engagement</h2>
           <p>KnoXia privilégie un modèle simple : vos documents, votre appareil et vos clés. Nous préférons expliquer clairement les protections mises en œuvre et leurs limites plutôt que de promettre une sécurité absolue.</p>
         </div>
       </div>

@@ -250,7 +250,7 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.12; letter-spacing: -
   background: var(--surface); border: 1px solid var(--border); border-radius: 20px; overflow: hidden;
 }
 .plan { padding: 36px 32px; display: flex; flex-direction: column; }
-.plan-premium { position: relative; background: linear-gradient(180deg, rgba(47,212,167,.06), transparent); }
+.compare-grid-single { grid-template-columns: minmax(0, 560px); justify-content: center; }
 .plan-flag {
   position: absolute; top: 20px; right: 24px; font-size: 12px; font-weight: 700; letter-spacing: .06em;
   color: #04120c; background: linear-gradient(135deg, var(--primary), var(--emerald));
@@ -501,3 +501,23 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.12; letter-spacing: -
 .security-reference a:hover { text-decoration: underline; }
 @media (max-width: 820px) { .whitepaper-content { grid-template-columns: 1fr; } .whitepaper-summary { position: static; } .security-reference-grid { grid-template-columns: 1fr; } }
 @media (max-width: 600px) { .whitepaper-hero { padding: 124px 0 52px; } .whitepaper-section { padding-top: 45px; } .whitepaper-summary, .security-reference { padding: 20px; } }
+
+.support-callout {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  max-width: 760px;
+  margin: 24px auto 0;
+  padding: 20px 24px;
+  border: 1px solid var(--border-2);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, .03);
+}
+.support-callout > div { flex: 1; }
+.support-callout h3 { margin: 0 0 4px; font-size: 1rem; }
+.support-callout p { margin: 0; color: var(--muted); font-size: .9rem; }
+.support-icon { font-size: 28px; line-height: 1; }
+@media (max-width: 620px) {
+  .support-callout { flex-direction: column; align-items: flex-start; }
+  .support-callout .btn { width: 100%; }
+}
