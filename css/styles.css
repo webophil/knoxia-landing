@@ -250,7 +250,7 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.12; letter-spacing: -
   background: var(--surface); border: 1px solid var(--border); border-radius: 20px; overflow: hidden;
 }
 .plan { padding: 36px 32px; display: flex; flex-direction: column; }
-.plan-premium { position: relative; background: linear-gradient(180deg, rgba(47,212,167,.06), transparent); }
+.compare-grid-single { grid-template-columns: minmax(0, 560px); justify-content: center; }
 .plan-flag {
   position: absolute; top: 20px; right: 24px; font-size: 12px; font-weight: 700; letter-spacing: .06em;
   color: #04120c; background: linear-gradient(135deg, var(--primary), var(--emerald));
