@@ -521,3 +521,75 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.12; letter-spacing: -
   .support-callout { flex-direction: column; align-items: flex-start; }
   .support-callout .btn { width: 100%; }
 }
+
+
+/* ---------- Landing polish ---------- */
+html { color-scheme: dark; scrollbar-color: var(--border-2) var(--bg); }
+::selection { background: rgba(47, 212, 167, .32); color: var(--text); }
+:focus-visible { outline: 3px solid rgba(47, 212, 167, .9); outline-offset: 3px; }
+a { text-underline-offset: .18em; }
+h1, h2 { text-wrap: balance; }
+p { text-wrap: pretty; }
+.grad { background: none; color: var(--primary); }
+
+.hero-sub { margin-bottom: 16px; }
+.hero-security-signal {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--primary);
+  font-size: .9rem;
+  font-weight: 600;
+}
+.hero-security-signal .ico { width: 18px; height: 18px; }
+.hero-cta { margin-top: 30px; }
+
+.uses-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 18px; }
+.use-card { grid-column: span 2; padding: 30px 28px; }
+.use-card:nth-child(4),
+.use-card:nth-child(5) { grid-column: span 3; }
+.use-card h3 { margin-bottom: 12px; }
+
+.compare-grid-single {
+  width: min(100%, 620px);
+  margin: 0 auto;
+  justify-content: stretch;
+  border-color: var(--border-2);
+}
+.compare-grid-single .plan { min-height: 100%; padding: 38px 34px; }
+.support-callout {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  max-width: 620px;
+  margin-top: 18px;
+  padding: 22px 24px;
+  border-radius: 16px;
+}
+.support-icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  color: var(--primary);
+  border: 1px solid rgba(47, 212, 167, .3);
+  border-radius: 12px;
+  background: rgba(47, 212, 167, .08);
+}
+.support-icon svg { width: 22px; height: 22px; }
+.support-callout h3 { margin-bottom: 6px; }
+.support-callout .btn { justify-self: end; }
+
+.reveal, .reveal.visible { opacity: 1; transform: none; transition: none; }
+
+@media (max-width: 940px) {
+  .uses-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+  .use-card,
+  .use-card:nth-child(4),
+  .use-card:nth-child(5) { grid-column: auto; }
+}
+@media (max-width: 620px) {
+  .hero-security-signal { align-items: flex-start; text-align: left; }
+  .hero-cta { margin-top: 26px; }
+  .support-callout { display: flex; gap: 14px; padding: 22px; }
+  .support-callout .btn { justify-self: auto; }
+}
