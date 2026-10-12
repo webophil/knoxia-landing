@@ -587,6 +587,9 @@ p { text-wrap: pretty; }
   .use-card:nth-child(4),
   .use-card:nth-child(5) { grid-column: auto; }
 }
+@media (max-width: 720px) {
+  .uses-grid { grid-template-columns: 1fr; }
+}
 @media (max-width: 620px) {
   .hero-security-signal { align-items: flex-start; text-align: left; }
   .hero-cta { margin-top: 26px; }
